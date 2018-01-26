@@ -14,6 +14,10 @@ Updated Jan 25, 2018
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
+from datetime import datetime
+from bokeh.plotting import figure, output_file, show
+from bokeh.palettes import Dark2_5 as palette
+
 
 default_s = ['the_donald', 'hillaryclinton']
 default_k = ['trump', 'clinton']
@@ -103,11 +107,7 @@ def remove_outliers_from_df(graphable_dfs, subreddits, q=0.99):
     return removed_outliers_list
 
 
-def make_dataframes_graphable(dataframe_list,
-                              subreddits=default_s,
-                              datetimestart=None, datetimeend=None,
-                              normalize=False, difference=False, cumsum=False,
-                              quantile=False):
+def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False, quantile=False):
     """
     Plot the frequency data into a graph, with many parameters for customization.
 
@@ -162,7 +162,7 @@ def make_dataframes_graphable(dataframe_list,
     return graphable_dataframes
 
 
-def plot_teh_graphs(graphable_dataframes, subreddits=default_s, keywords=default_k, difference=False, style='seaborn-darkgrid'):
+def plot_teh_graphs_matplotlib(graphable_dataframes, subreddits=default_s, keywords=default_k, difference=False, style='seaborn-darkgrid'):
     plt.style.use(style)
     line_types = [':', '--', '-.', '-'] * 3
 
@@ -187,20 +187,52 @@ def plot_teh_graphs(graphable_dataframes, subreddits=default_s, keywords=default
     return
 
 
+def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference=False):
+    colors = list(palette)
+
+    p = figure(plot_width=800, plot_height=800, x_axis_type='datetime')
+
+    for i, df in enumerate(graphable_dataframes):
+        if difference:
+            name = 'r/{} - r/{}: "{}"'.format(subreddits[0], subreddits[1], keywords[i + 1])
+            p.line(x=df.index, y=df.values, legend=name, color=colors[i])
+
+        else:
+            for j, sub in enumerate(subreddits):
+                name = 'r/{}: "{}"'.format(subreddits[j], keywords[i + 1])
+                p.line(x=df.index, y=df[sub], legend=name, color=colors[len(subreddits) * j + i])
+
+    p.legend.location = "top_left"
+    p.legend.click_policy = 'hide'
+
+    show(p)
+
 
 if __name__ == "__main__":
-    data_directory = '/home/jayckaiser/Documents/jayckaiser-reddit-politics-heroku/data/by_subs_frequencies_100/'
+    data_directory = './data/by_subs_frequencies_100/'
 
-    subreddits = ['the_donald', 'hillaryclinton']
-    keywords = ['trump', 'clinton']
+    subreddits = [
+        'the_donald',
+        'hillaryclinton',
+        #'politics'
+                  ]
+    keywords = [
+        'trump',
+        'clinton',
+        #'sanders'
+                ]
 
     combined_df = create_teh_dataframe(data_directory, subreddits=subreddits, keywords=keywords)
 
     difference = False
 
     plot_these = make_dataframes_graphable(combined_df, subreddits,
-                                           datetimestart=None, datetimeend=None,
-                                           normalize=True, difference=difference, cumsum=False,
+                                           datetimestart=None,  #datetime(2016, 10, 1),
+                                           datetimeend=None,  #datetime(2017, 5, 30),
+                                           normalize=True,
+                                           difference=difference,
+                                           cumsum=False,
                                            quantile=0.99
                                            )
-    plot_teh_graphs(plot_these, subreddits, keywords, difference=difference)
+    #plot_teh_graphs_matplotlib(plot_these, subreddits, keywords, difference=difference)
+    plot_teh_graphs_bokeh(plot_these, subreddits, keywords, difference=difference)
