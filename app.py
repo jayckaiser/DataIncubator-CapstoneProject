@@ -9,9 +9,6 @@ Created 12/23/2017
 """
 
 import os
-import requests
-import simplejson as json
-import pandas as pd
 from flask import Flask, render_template, request
 from bokeh.plotting import figure
 from bokeh.embed import components
@@ -60,11 +57,11 @@ def frequencies_run():
 
         difference = False
 
-        GraphPlotting.plot_these = make_dataframes_graphable(combined_df, subs2plot,
+       plot_these =  GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
                                                              datetimestart=startdate, datetimeend=enddate,
                                                              **options2plot
                                                              )
-        GraphPlotting.plot_teh_graphs(plot_these, subs2plot, words2plot, difference=difference)
+        GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
 
 
 @app.route('/networks', methods=['GET', 'POST'])
@@ -82,6 +79,10 @@ def retrieve_subreddits():
 
 def retrieve_keywords():
     return request.getlist('keyword_select')
+
+
+def convert_datetimes(datetime):
+    pass
 
 
 if __name__ == "__main__":

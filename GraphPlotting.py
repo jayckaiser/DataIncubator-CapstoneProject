@@ -13,7 +13,7 @@ Updated Jan 25, 2018
 
 import pandas as pd
 import os
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from datetime import datetime
 from bokeh.plotting import figure, output_file, show
 from bokeh.palettes import Dark2_5 as palette
