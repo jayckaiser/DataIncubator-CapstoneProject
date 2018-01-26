@@ -1,0 +1,1337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Jay Kaiser - Reddit Politics</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="./static", filename='style.css'">
+  </head>
+  <body>
+    <div class="metanav">
+      <h3>Select any number of subreddits and keywords and see how their frequencies change over time!</h3>
+      <h4>(If left blank, they'll default to r/The_Donald and r/hillaryclinton, and 'trump' and 'clinton'.) </h4>
+
+
+
+<div class="multiselect">
+    <div class="selectBox" onclick="showCheckboxes()">
+      <select>
+        <option>Choose some subreddits!</option>
+      </select>
+      <div class="overSelect"></div>
+    </div>
+    <div id="checkboxes">
+
+<label for="politics">
+       <input type="checkbox" name="sub_select" id="politics" />r/politics</label>
+
+<h4>2016 Presidential Candidates</h4>
+<p>Republicans</p>
+<label for="bencarson">
+        <input type="checkbox" name="sub_select" id="bencarson" />r/bencarson</label>
+<label for="chrischristie">
+        <input type="checkbox" name="sub_select" id="chrischristie" />r/chrischristie</label>
+<label for="tedcruz">
+        <input type="checkbox" name="sub_select" id="tedcruz" />r/tedcruz</label>
+<label for="carly_fiorina">
+        <input type="checkbox" name="sub_select" id="carly_fiorina" />r/carly_fiorina</label>
+<label for="jindal">
+        <input type="checkbox" name="sub_select" id="jindal" />r/jindal</label>
+<label for="kasichforpresident">
+        <input type="checkbox" name="sub_select" id="kasichforpresident" />r/kasichforpresident</label>
+<label for="randpaul">
+        <input type="checkbox" name="sub_select" id="randpaul" />r/randpaul</label>
+<label for="marco_rubio">
+        <input type="checkbox" name="sub_select" id="marco_rubio" />r/marco_rubio</label>
+<label for="ricksantorum">
+        <input type="checkbox" name="sub_select" id="ricksantorum" />r/ricksantorum</label>
+<label for="asktrumpsupporters">
+        <input type="checkbox" name="sub_select" id="asktrumpsupporters" />r/asktrumpsupporters</label>
+<label for="the_donald">
+        <input type="checkbox" name="sub_select" id="the_donald" />r/the_donald</label>
+
+<p>Democrats</p>
+<label for="hillaryclinton">
+        <input type="checkbox" name="sub_select" id="hillaryclinton" />r/hillaryclinton</label>
+<label for="hillaryforamerica">
+        <input type="checkbox" name="sub_select" id="hillaryforamerica" />r/hillaryforamerica</label>
+<label for="martinomalley">
+        <input type="checkbox" name="sub_select" id="martinomalley" />r/martinomalley</label>
+<label for="sandersforpresident">
+        <input type="checkbox" name="sub_select" id="sandersforpresident" />r/sandersforpresident</label>
+
+<p>Third Party and Independents</p>
+<label for="garyjohnson">
+        <input type="checkbox" name="sub_select" id="garyjohnson" />r/garyjohnson</label>
+<label for="jillstein">
+        <input type="checkbox" name="sub_select" id="jillstein" />r/jillstein</label>
+<label for="mcmullin">
+        <input type="checkbox" name="sub_select" id="mcmullin" />r/mcmullin</label>
+
+<h4>Partisan Subreddits</h4>
+<p>In the center</p>
+<label for="neutralpolitics">
+        <input type="checkbox" name="sub_select" id="neutralpolitics" />r/neutralpolitics</label>
+<label for="centrist">
+        <input type="checkbox" name="sub_select" id="centrist" />r/centrist</label>
+<label for="moderatepolitics">
+        <input type="checkbox" name="sub_select" id="moderatepolitics" />r/moderatepolitics</label>
+<label for="peoplesparty">
+        <input type="checkbox" name="sub_select" id="peoplesparty" />r/peoplesparty</label>
+
+<p>On the left</p>
+<label for="alltheleft">
+        <input type="checkbox" name="sub_select" id="alltheleft" />r/alltheleft</label>
+<label for="classical_liberals">
+        <input type="checkbox" name="sub_select" id="classical_liberals" />r/classical_liberals</label>
+<label for="cornbreadliberals">
+        <input type="checkbox" name="sub_select" id="cornbreadliberals" />r/cornbreadliberals</label>
+<label for="democrats">
+        <input type="checkbox" name="sub_select" id="democrats" />r/democrats</label>
+<label for="demsocialist">
+        <input type="checkbox" name="sub_select" id="demsocialist" />r/demsocialist</label>
+<label for="greenparty">
+        <input type="checkbox" name="sub_select" id="greenparty" />r/greenparty</label>
+<label for="labor">
+        <input type="checkbox" name="sub_select" id="labor" />r/labor</label>
+<label for="leftcommunism">
+        <input type="checkbox" name="sub_select" id="leftcommunism" />r/leftcommunism</label>
+<label for="leninism">
+        <input type="checkbox" name="sub_select" id="leninism" />r/leninism</label>
+<label for="liberal">
+        <input type="checkbox" name="sub_select" id="liberal" />r/liberal</label>
+<label for="neoprogs">
+        <input type="checkbox" name="sub_select" id="neoprogs" />r/neoprogs</label>
+<label for="obama">
+        <input type="checkbox" name="sub_select" id="obama" />r/obama</label>
+<label for="progressive">
+        <input type="checkbox" name="sub_select" id="progressive" />r/progressive</label>
+<label for="socialdemocracy">
+        <input type="checkbox" name="sub_select" id="socialdemocracy" />r/socialdemocracy</label>
+<label for="socialism">
+        <input type="checkbox" name="sub_select" id="socialism" />r/socialism</label>
+
+<p>On the right</p>
+<label for="conservative">
+        <input type="checkbox" name="sub_select" id="conservative" />r/conservative</label>
+<label for="conservatives">
+        <input type="checkbox" name="sub_select" id="conservatives" />r/conservatives</label>
+<label for="monarchism">
+        <input type="checkbox" name="sub_select" id="monarchism" />r/monarchism</label>
+<label for="new_right">
+        <input type="checkbox" name="sub_select" id="new_right" />r/new_right</label>
+<label for="objectivism">
+        <input type="checkbox" name="sub_select" id="objectivism" />r/objectivism</label>
+<label for="paleoconservative">
+        <input type="checkbox" name="sub_select" id="paleoconservative" />r/paleoconservative</label>
+<label for="republican">
+        <input type="checkbox" name="sub_select" id="republican" />r/republican</label>
+<label for="republicans">
+        <input type="checkbox" name="sub_select" id="republicans" />r/republicans</label>
+<label for="romney">
+        <input type="checkbox" name="sub_select" id="romney" />r/romney</label>
+<label for="trueobjectivism">
+        <input type="checkbox" name="sub_select" id="trueobjectivism" />r/trueobjectivism</label>
+
+<p>Libertarian</p>
+<label for="agorism">
+        <input type="checkbox" name="sub_select" id="agorism" />r/agorism</label>
+<label for="anarcho_capitalism">
+        <input type="checkbox" name="sub_select" id="anarcho_capitalism" />r/anarcho_capitalism</label>
+<label for="anarchobjectivism">
+        <input type="checkbox" name="sub_select" id="anarchobjectivism" />r/anarchobjectivism</label>
+<label for="christian_ancaps">
+        <input type="checkbox" name="sub_select" id="christian_ancaps" />r/christian_ancaps</label>
+<label for="libertarian">
+        <input type="checkbox" name="sub_select" id="libertarian" />r/libertarian</label>
+<label for="libertariandebates">
+        <input type="checkbox" name="sub_select" id="libertariandebates" />r/libertariandebates</label>
+<label for="libertarianleft">
+        <input type="checkbox" name="sub_select" id="libertarianleft" />r/libertarianleft</label>
+<label for="libertarianmeme">
+        <input type="checkbox" name="sub_select" id="libertarianmeme" />r/libertarianmeme</label>
+<label for="libertariansocialism">
+        <input type="checkbox" name="sub_select" id="libertariansocialism" />r/libertariansocialism</label>
+<label for="libertarianwomen">
+        <input type="checkbox" name="sub_select" id="libertarianwomen" />r/libertarianwomen</label>
+<label for="paul">
+        <input type="checkbox" name="sub_select" id="paul" />r/paul</label>
+<label for="ronpaul">
+        <input type="checkbox" name="sub_select" id="ronpaul" />r/ronpaul</label>
+<label for="truelibertarian">
+        <input type="checkbox" name="sub_select" id="truelibertarian" />r/truelibertarian</label>
+<label for="voluntarism">
+        <input type="checkbox" name="sub_select" id="voluntarism" />r/voluntarism</label>
+
+<p>Communism</p>
+<label for="communism">
+        <input type="checkbox" name="sub_select" id="communism" />r/communism</label>
+<label for="debateacommunist">
+        <input type="checkbox" name="sub_select" id="debateacommunist" />r/debateacommunist</label>
+<label for="debatecommunism">
+        <input type="checkbox" name="sub_select" id="debatecommunism" />r/debatecommunism</label>
+<label for="leftcommunism">
+        <input type="checkbox" name="sub_select" id="leftcommunism" />r/leftcommunism</label>
+
+<p>Anarchism</p>
+<label for="anarchism">
+        <input type="checkbox" name="sub_select" id="anarchism" />r/anarchism</label>
+<label for="anarchistnews">
+        <input type="checkbox" name="sub_select" id="anarchistnews" />r/anarchistnews</label>
+<label for="anarchy101">
+        <input type="checkbox" name="sub_select" id="anarchy101" />r/anarchy101</label>
+<label for="crimethinccollective">
+        <input type="checkbox" name="sub_select" id="crimethinccollective" />r/crimethinccollective</label>
+<label for="green_anarchism">
+        <input type="checkbox" name="sub_select" id="green_anarchism" />r/green_anarchism</label>
+<label for="libertariansocialism">
+        <input type="checkbox" name="sub_select" id="libertariansocialism" />r/libertariansocialism</label>
+<label for="libertarianleft">
+        <input type="checkbox" name="sub_select" id="libertarianleft" />r/libertarianleft</label>
+
+<p>Other Political Parties</p>
+<label for="futuristparty">
+        <input type="checkbox" name="sub_select" id="futuristparty" />r/futuristparty</label>
+<label for="pirateparty">
+        <input type="checkbox" name="sub_select" id="pirateparty" />r/pirateparty</label>
+<label for="bullmooseparty">
+        <input type="checkbox" name="sub_select" id="bullmooseparty" />r/bullmooseparty</label>
+
+<h4>Political Issues and Causes</h4>
+<label for="acta">
+        <input type="checkbox" name="sub_select" id="acta" />r/acta</label>
+<label for="antiwar">
+        <input type="checkbox" name="sub_select" id="antiwar" />r/antiwar</label>
+<label for="bad_cop_no_donut">
+        <input type="checkbox" name="sub_select" id="bad_cop_no_donut" />r/bad_cop_no_donut</label>
+<label for="badgovnofreedom">
+        <input type="checkbox" name="sub_select" id="badgovnofreedom" />r/badgovnofreedom</label>
+<label for="basicincome">
+        <input type="checkbox" name="sub_select" id="basicincome" />r/basicincome</label>
+<label for="cispa">
+        <input type="checkbox" name="sub_select" id="cispa" />r/cispa</label>
+<label for="democracy">
+        <input type="checkbox" name="sub_select" id="democracy" />r/democracy</label>
+<label for="endlesswar">
+        <input type="checkbox" name="sub_select" id="endlesswar" />r/endlesswar</label>
+<label for="enoughpaulspam">
+        <input type="checkbox" name="sub_select" id="enoughpaulspam" />r/enoughpaulspam</label>
+<label for="enoughobamaspam">
+        <input type="checkbox" name="sub_select" id="enoughobamaspam" />r/enoughobamaspam</label>
+<label for="environment">
+        <input type="checkbox" name="sub_select" id="environment" />r/environment</label>
+<label for="fairtax">
+        <input type="checkbox" name="sub_select" id="fairtax" />r/fairtax</label>
+<label for="flushthetpp">
+        <input type="checkbox" name="sub_select" id="flushthetpp" />r/flushthetpp</label>
+<label for="evolutionreddit">
+        <input type="checkbox" name="sub_select" id="evolutionreddit" />r/evolutionreddit</label>
+<label for="firstamendment">
+        <input type="checkbox" name="sub_select" id="firstamendment" />r/firstamendment</label>
+<label for="good_cop_free_donut">
+        <input type="checkbox" name="sub_select" id="good_cop_free_donut" />r/good_cop_free_donut</label>
+<label for="greed">
+        <input type="checkbox" name="sub_select" id="greed" />r/greed</label>
+<label for="green">
+        <input type="checkbox" name="sub_select" id="green" />r/green</label>
+<label for="gunpolitics">
+        <input type="checkbox" name="sub_select" id="gunpolitics" />r/gunpolitics</label>
+<label for="gunsarecool">
+        <input type="checkbox" name="sub_select" id="gunsarecool" />r/gunsarecool</label>
+<label for="humanrights">
+        <input type="checkbox" name="sub_select" id="humanrights" />r/humanrights</label>
+<label for="labor">
+        <input type="checkbox" name="sub_select" id="labor" />r/labor</label>
+<label for="liberty">
+        <input type="checkbox" name="sub_select" id="liberty" />r/liberty</label>
+<label for="nsa">
+        <input type="checkbox" name="sub_select" id="nsa" />r/nsa</label>
+<label for="nsaleaks">
+        <input type="checkbox" name="sub_select" id="nsaleaks" />r/nsaleaks</label>
+<label for="rpac">
+        <input type="checkbox" name="sub_select" id="rpac" />r/rpac</label>
+<label for="politicalactivism">
+        <input type="checkbox" name="sub_select" id="politicalactivism" />r/politicalactivism</label>
+<label for="privacy">
+        <input type="checkbox" name="sub_select" id="privacy" />r/privacy</label>
+<label for="prochoice">
+        <input type="checkbox" name="sub_select" id="prochoice" />r/prochoice</label>
+<label for="progun">
+        <input type="checkbox" name="sub_select" id="progun" />r/progun</label>
+<label for="restorethefourth">
+        <input type="checkbox" name="sub_select" id="restorethefourth" />r/restorethefourth</label>
+<label for="rootstrikers">
+        <input type="checkbox" name="sub_select" id="rootstrikers" />r/rootstrikers</label>
+<label for="savetheconstitution">
+        <input type="checkbox" name="sub_select" id="savetheconstitution" />r/savetheconstitution</label>
+<label for="socialdemocracy">
+        <input type="checkbox" name="sub_select" id="socialdemocracy" />r/socialdemocracy</label>
+<label for="sopa">
+        <input type="checkbox" name="sub_select" id="sopa" />r/sopa</label>
+<label for="supportthetpp">
+        <input type="checkbox" name="sub_select" id="supportthetpp" />r/supportthetpp</label>
+<label for="wikileaks">
+        <input type="checkbox" name="sub_select" id="wikileaks" />r/wikileaks</label>
+
+<h4>Election Themed</h4>
+<label for="2012elections">
+        <input type="checkbox" name="sub_select" id="2012elections" />r/2012elections</label>
+<label for="2016_elections">
+        <input type="checkbox" name="sub_select" id="2016_elections" />r/2016_elections</label>
+<label for="americanselect">
+        <input type="checkbox" name="sub_select" id="americanselect" />r/americanselect</label>
+<label for="campaigns">
+        <input type="checkbox" name="sub_select" id="campaigns" />r/campaigns</label>
+<label for="electionpolls">
+        <input type="checkbox" name="sub_select" id="electionpolls" />r/electionpolls</label>
+<label for="electionreform">
+        <input type="checkbox" name="sub_select" id="electionreform" />r/electionreform</label>
+<label for="elections">
+        <input type="checkbox" name="sub_select" id="elections" />r/elections</label>
+<label for="forecast2016">
+        <input type="checkbox" name="sub_select" id="forecast2016" />r/forecast2016</label>
+<label for="peoplesparty">
+        <input type="checkbox" name="sub_select" id="peoplesparty" />r/peoplesparty</label>
+<label for="runforit">
+        <input type="checkbox" name="sub_select" id="runforit" />r/runforit</label>
+<label for="voting">
+        <input type="checkbox" name="sub_select" id="voting" />r/voting</label>
+
+<h4>State Specific</h4>
+<label for="flgovernment">
+        <input type="checkbox" name="sub_select" id="flgovernment" />r/flgovernment</label>
+<label for="illinoispolitics">
+        <input type="checkbox" name="sub_select" id="illinoispolitics" />r/illinoispolitics</label>
+<label for="masspolitics">
+        <input type="checkbox" name="sub_select" id="masspolitics" />r/masspolitics</label>
+<label for="missouripolitics">
+        <input type="checkbox" name="sub_select" id="missouripolitics" />r/missouripolitics</label>
+<label for="utahpolitics">
+        <input type="checkbox" name="sub_select" id="utahpolitics" />r/utahpolitics</label>
+<label for="virginiapolitics">
+        <input type="checkbox" name="sub_select" id="virginiapolitics" />r/virginiapolitics</label>
+
+<h4>General Interest</h4>
+<label for="americangovernment">
+        <input type="checkbox" name="sub_select" id="americangovernment" />r/americangovernment</label>
+<label for="americanpolitics">
+        <input type="checkbox" name="sub_select" id="americanpolitics" />r/americanpolitics</label>
+<label for="anythinggoesnews">
+        <input type="checkbox" name="sub_select" id="anythinggoesnews" />r/anythinggoesnews</label>
+<label for="ask_political_science">
+        <input type="checkbox" name="sub_select" id="ask_political_science" />r/ask_political_science</label>
+<label for="ask_politics">
+        <input type="checkbox" name="sub_select" id="ask_politics" />r/ask_politics</label>
+<label for="authoritarian">
+        <input type="checkbox" name="sub_select" id="authoritarian" />r/authoritarian</label>
+<label for="comparative">
+        <input type="checkbox" name="sub_select" id="comparative" />r/comparative</label>
+<label for="conspiracy">
+        <input type="checkbox" name="sub_select" id="conspiracy" />r/conspiracy</label>
+<label for="conspiratard">
+        <input type="checkbox" name="sub_select" id="conspiratard" />r/conspiratard</label>
+<label for="descentintotyranny">
+        <input type="checkbox" name="sub_select" id="descentintotyranny" />r/descentintotyranny</label>
+<label for="debatefascism">
+        <input type="checkbox" name="sub_select" id="debatefascism" />r/debatefascism</label>
+<label for="doctorswithoutborders">
+        <input type="checkbox" name="sub_select" id="doctorswithoutborders" />r/doctorswithoutborders</label>
+<label for="government">
+        <input type="checkbox" name="sub_select" id="government" />r/government</label>
+<label for="history">
+        <input type="checkbox" name="sub_select" id="history" />r/history</label>
+<label for="humanrights">
+        <input type="checkbox" name="sub_select" id="humanrights" />r/humanrights</label>
+<label for="iwantout">
+        <input type="checkbox" name="sub_select" id="iwantout" />r/iwantout</label>
+<label for="iww">
+        <input type="checkbox" name="sub_select" id="iww" />r/iww</label>
+<label for="justice">
+        <input type="checkbox" name="sub_select" id="justice" />r/justice</label>
+<label for="news">
+        <input type="checkbox" name="sub_select" id="news" />r/news</label>
+<label for="politic">
+        <input type="checkbox" name="sub_select" id="politic" />r/politic</label>
+<label for="politicaldiscussion">
+        <input type="checkbox" name="sub_select" id="politicaldiscussion" />r/politicaldiscussion</label>
+<label for="politicalfactchecking">
+        <input type="checkbox" name="sub_select" id="politicalfactchecking" />r/politicalfactchecking</label>
+<label for="politicalhumor">
+        <input type="checkbox" name="sub_select" id="politicalhumor" />r/politicalhumor</label>
+<label for="politicalmoderation">
+        <input type="checkbox" name="sub_select" id="politicalmoderation" />r/politicalmoderation</label>
+<label for="politicalphilosophy">
+        <input type="checkbox" name="sub_select" id="politicalphilosophy" />r/politicalphilosophy</label>
+<label for="politicalpics">
+        <input type="checkbox" name="sub_select" id="politicalpics" />r/politicalpics</label>
+<label for="politicalpredictions">
+        <input type="checkbox" name="sub_select" id="politicalpredictions" />r/politicalpredictions</label>
+<label for="politicalscience">
+        <input type="checkbox" name="sub_select" id="politicalscience" />r/politicalscience</label>
+<label for="politicaltweets">
+        <input type="checkbox" name="sub_select" id="politicaltweets" />r/politicaltweets</label>
+<label for="politicsdebate">
+        <input type="checkbox" name="sub_select" id="politicsdebate" />r/politicsdebate</label>
+<label for="politicsinamerica">
+        <input type="checkbox" name="sub_select" id="politicsinamerica" />r/politicsinamerica</label>
+<label for="pragmatism">
+        <input type="checkbox" name="sub_select" id="pragmatism" />r/pragmatism</label>
+<label for="republicofpolitics">
+        <input type="checkbox" name="sub_select" id="republicofpolitics" />r/republicofpolitics</label>
+<label for="rvbdebates">
+        <input type="checkbox" name="sub_select" id="rvbdebates" />r/rvbdebates</label>
+<label for="stateoftheunion">
+        <input type="checkbox" name="sub_select" id="stateoftheunion" />r/stateoftheunion</label>
+<label for="techpolitics">
+        <input type="checkbox" name="sub_select" id="techpolitics" />r/techpolitics</label>
+<label for="thirdpartyroundtable">
+        <input type="checkbox" name="sub_select" id="thirdpartyroundtable" />r/thirdpartyroundtable</label>
+<label for="truepolitics">
+        <input type="checkbox" name="sub_select" id="truepolitics" />r/truepolitics</label>
+<label for="usanews">
+        <input type="checkbox" name="sub_select" id="usanews" />r/usanews</label>
+<label for="uspolitics">
+        <input type="checkbox" name="sub_select" id="uspolitics" />r/uspolitics</label>
+<label for="watchingcongress">
+        <input type="checkbox" name="sub_select" id="watchingcongress" />r/watchingcongress</label>
+<label for="wealth">
+        <input type="checkbox" name="sub_select" id="wealth" />r/wealth</label>
+<label for="worldunity">
+        <input type="checkbox" name="sub_select" id="worldunity" />r/worldunity</label>
+<label for="yro">
+        <input type="checkbox" name="sub_select" id="yro" />r/yro</label>
+
+<h4>Reddit Activist Network</h4>
+<label for="alloccupy">
+        <input type="checkbox" name="sub_select" id="alloccupy" />r/alloccupy</label>
+<label for="acta">
+        <input type="checkbox" name="sub_select" id="acta" />r/acta</label>
+<label for="anonymous">
+        <input type="checkbox" name="sub_select" id="anonymous" />r/anonymous</label>
+<label for="anonops">
+        <input type="checkbox" name="sub_select" id="anonops" />r/anonops</label>
+<label for="auinternetaccess">
+        <input type="checkbox" name="sub_select" id="auinternetaccess" />r/auinternetaccess</label>
+<label for="bad_cop_no_donut">
+        <input type="checkbox" name="sub_select" id="bad_cop_no_donut" />r/bad_cop_no_donut</label>
+<label for="boycotthollywood">
+        <input type="checkbox" name="sub_select" id="boycotthollywood" />r/boycotthollywood</label>
+<label for="cascadia">
+        <input type="checkbox" name="sub_select" id="cascadia" />r/cascadia</label>
+<label for="censorship">
+        <input type="checkbox" name="sub_select" id="censorship" />r/censorship</label>
+<label for="darknetplan">
+        <input type="checkbox" name="sub_select" id="darknetplan" />r/darknetplan</label>
+<label for="evolutionreddit">
+        <input type="checkbox" name="sub_select" id="evolutionreddit" />r/evolutionreddit</label>
+<label for="fia">
+        <input type="checkbox" name="sub_select" id="fia" />r/fia</label>
+<label for="hackbloc">
+        <input type="checkbox" name="sub_select" id="hackbloc" />r/hackbloc</label>
+<label for="internetdeclaration">
+        <input type="checkbox" name="sub_select" id="internetdeclaration" />r/internetdeclaration</label>
+<label for="internetdefense">
+        <input type="checkbox" name="sub_select" id="internetdefense" />r/internetdefense</label>
+<label for="israelexposed">
+        <input type="checkbox" name="sub_select" id="israelexposed" />r/israelexposed</label>
+<label for="killhollywood">
+        <input type="checkbox" name="sub_select" id="killhollywood" />r/killhollywood</label>
+<label for="meshnet">
+        <input type="checkbox" name="sub_select" id="meshnet" />r/meshnet</label>
+<label for="mensrights">
+        <input type="checkbox" name="sub_select" id="mensrights" />r/mensrights</label>
+<label for="occupy">
+        <input type="checkbox" name="sub_select" id="occupy" />r/occupy</label>
+<label for="occupywallstreet">
+        <input type="checkbox" name="sub_select" id="occupywallstreet" />r/occupywallstreet</label>
+<label for="opelectronicleviathan">
+        <input type="checkbox" name="sub_select" id="opelectronicleviathan" />r/opelectronicleviathan</label>
+<label for="operationgrabass">
+        <input type="checkbox" name="sub_select" id="operationgrabass" />r/operationgrabass</label>
+<label for="operationpullryan">
+        <input type="checkbox" name="sub_select" id="operationpullryan" />r/operationpullryan</label>
+<label for="petition">
+        <input type="checkbox" name="sub_select" id="petition" />r/petition</label>
+<label for="projectfactcheck">
+        <input type="checkbox" name="sub_select" id="projectfactcheck" />r/projectfactcheck</label>
+<label for="projectoverhaul">
+        <input type="checkbox" name="sub_select" id="projectoverhaul" />r/projectoverhaul</label>
+<label for="redditactivism">
+        <input type="checkbox" name="sub_select" id="redditactivism" />r/redditactivism</label>
+<label for="rpac">
+        <input type="checkbox" name="sub_select" id="rpac" />r/rpac</label>
+<label for="rwb">
+        <input type="checkbox" name="sub_select" id="rwb" />r/rwb</label>
+<label for="smallrevolutions">
+        <input type="checkbox" name="sub_select" id="smallrevolutions" />r/smallrevolutions</label>
+<label for="sopa">
+        <input type="checkbox" name="sub_select" id="sopa" />r/sopa</label>
+<label for="testpac">
+        <input type="checkbox" name="sub_select" id="testpac" />r/testpac</label>
+<label for="thewarondrugs">
+        <input type="checkbox" name="sub_select" id="thewarondrugs" />r/thewarondrugs</label>
+<label for="timetolegalize">
+        <input type="checkbox" name="sub_select" id="timetolegalize" />r/timetolegalize</label>
+<label for="troubledteens">
+        <input type="checkbox" name="sub_select" id="troubledteens" />r/troubledteens</label>
+<label for="union">
+        <input type="checkbox" name="sub_select" id="union" />r/union</label>
+
+<h4>Economics</h4>
+<label for="austrian_economics">
+        <input type="checkbox" name="sub_select" id="austrian_economics" />r/austrian_economics</label>
+<label for="business">
+        <input type="checkbox" name="sub_select" id="business" />r/business</label>
+<label for="economics">
+        <input type="checkbox" name="sub_select" id="economics" />r/economics</label>
+<label for="internationalbusiness">
+        <input type="checkbox" name="sub_select" id="internationalbusiness" />r/internationalbusiness</label>
+    </div>
+  </div>
+
+<p>   </p>
+
+  <div class="multiselect">
+    <div class="selectBox" onclick="showCheckboxes2()">
+      <select>
+        <option>Choose some keywords!</option>
+      </select>
+      <div class="overSelect"></div>
+    </div>
+    <div id="checkboxes2">
+      <label for="aca">
+        <input type="checkbox" name="keyword_select" id="aca" />aca</label>
+ <label for="accusations">
+        <input type="checkbox" name="keyword_select" id="accusations" />accusations</label>
+ <label for="action">
+        <input type="checkbox" name="keyword_select" id="action" />action</label>
+ <label for="actually">
+        <input type="checkbox" name="keyword_select" id="actually" />actually</label>
+ <label for="agree">
+        <input type="checkbox" name="keyword_select" id="agree" />agree</label>
+ <label for="america">
+        <input type="checkbox" name="keyword_select" id="america" />america</label>
+ <label for="american">
+        <input type="checkbox" name="keyword_select" id="american" />american</label>
+ <label for="aren">
+        <input type="checkbox" name="keyword_select" id="aren" />aren</label>
+ <label for="argument">
+        <input type="checkbox" name="keyword_select" id="argument" />argument</label>
+ <label for="article">
+        <input type="checkbox" name="keyword_select" id="article" />article</label>
+ <label for="assange">
+        <input type="checkbox" name="keyword_select" id="assange" />assange</label>
+ <label for="attack">
+        <input type="checkbox" name="keyword_select" id="attack" />attack</label>
+ <label for="automatically">
+        <input type="checkbox" name="keyword_select" id="automatically" />automatically</label>
+ <label for="bad">
+        <input type="checkbox" name="keyword_select" id="bad" />bad</label>
+ <label for="ban">
+        <input type="checkbox" name="keyword_select" id="ban" />ban</label>
+ <label for="banks">
+        <input type="checkbox" name="keyword_select" id="banks" />banks</label>
+ <label for="beck">
+        <input type="checkbox" name="keyword_select" id="beck" />beck</label>
+ <label for="believe">
+        <input type="checkbox" name="keyword_select" id="believe" />believe</label>
+ <label for="bernie">
+        <input type="checkbox" name="keyword_select" id="bernie" />bernie</label>
+ <label for="best">
+        <input type="checkbox" name="keyword_select" id="best" />best</label>
+ <label for="better">
+        <input type="checkbox" name="keyword_select" id="better" />better</label>
+ <label for="biden">
+        <input type="checkbox" name="keyword_select" id="biden" />biden</label>
+ <label for="big">
+        <input type="checkbox" name="keyword_select" id="big" />big</label>
+ <label for="black">
+        <input type="checkbox" name="keyword_select" id="black" />black</label>
+ <label for="bot">
+        <input type="checkbox" name="keyword_select" id="bot" />bot</label>
+ <label for="bp">
+        <input type="checkbox" name="keyword_select" id="bp" />bp</label>
+ <label for="bush">
+        <input type="checkbox" name="keyword_select" id="bush" />bush</label>
+ <label for="business">
+        <input type="checkbox" name="keyword_select" id="business" />business</label>
+ <label for="campaign">
+        <input type="checkbox" name="keyword_select" id="campaign" />campaign</label>
+ <label for="candidate">
+        <input type="checkbox" name="keyword_select" id="candidate" />candidate</label>
+ <label for="candidates">
+        <input type="checkbox" name="keyword_select" id="candidates" />candidates</label>
+ <label for="care">
+        <input type="checkbox" name="keyword_select" id="care" />care</label>
+ <label for="carson">
+        <input type="checkbox" name="keyword_select" id="carson" />carson</label>
+ <label for="case">
+        <input type="checkbox" name="keyword_select" id="case" />case</label>
+ <label for="change">
+        <input type="checkbox" name="keyword_select" id="change" />change</label>
+ <label for="cheney">
+        <input type="checkbox" name="keyword_select" id="cheney" />cheney</label>
+ <label for="civil">
+        <input type="checkbox" name="keyword_select" id="civil" />civil</label>
+ <label for="clinton">
+        <input type="checkbox" name="keyword_select" id="clinton" />clinton</label>
+ <label for="come">
+        <input type="checkbox" name="keyword_select" id="come" />come</label>
+ <label for="comey">
+        <input type="checkbox" name="keyword_select" id="comey" />comey</label>
+ <label for="comment">
+        <input type="checkbox" name="keyword_select" id="comment" />comment</label>
+ <label for="comments">
+        <input type="checkbox" name="keyword_select" id="comments" />comments</label>
+ <label for="companies">
+        <input type="checkbox" name="keyword_select" id="companies" />companies</label>
+ <label for="company">
+        <input type="checkbox" name="keyword_select" id="company" />company</label>
+ <label for="compose">
+        <input type="checkbox" name="keyword_select" id="compose" />compose</label>
+ <label for="concerns">
+        <input type="checkbox" name="keyword_select" id="concerns" />concerns</label>
+ <label for="congress">
+        <input type="checkbox" name="keyword_select" id="congress" />congress</label>
+ <label for="constitution">
+        <input type="checkbox" name="keyword_select" id="constitution" />constitution</label>
+ <label for="contact">
+        <input type="checkbox" name="keyword_select" id="contact" />contact</label>
+ <label for="control">
+        <input type="checkbox" name="keyword_select" id="control" />control</label>
+ <label for="cop">
+        <input type="checkbox" name="keyword_select" id="cop" />cop</label>
+ <label for="cops">
+        <input type="checkbox" name="keyword_select" id="cops" />cops</label>
+ <label for="corporations">
+        <input type="checkbox" name="keyword_select" id="corporations" />corporations</label>
+ <label for="cost">
+        <input type="checkbox" name="keyword_select" id="cost" />cost</label>
+ <label for="country">
+        <input type="checkbox" name="keyword_select" id="country" />country</label>
+ <label for="cruz">
+        <input type="checkbox" name="keyword_select" id="cruz" />cruz</label>
+ <label for="cuts">
+        <input type="checkbox" name="keyword_select" id="cuts" />cuts</label>
+ <label for="day">
+        <input type="checkbox" name="keyword_select" id="day" />day</label>
+ <label for="debate">
+        <input type="checkbox" name="keyword_select" id="debate" />debate</label>
+ <label for="debt">
+        <input type="checkbox" name="keyword_select" id="debt" />debt</label>
+ <label for="delegates">
+        <input type="checkbox" name="keyword_select" id="delegates" />delegates</label>
+ <label for="democratic">
+        <input type="checkbox" name="keyword_select" id="democratic" />democratic</label>
+ <label for="democrats">
+        <input type="checkbox" name="keyword_select" id="democrats" />democrats</label>
+ <label for="did">
+        <input type="checkbox" name="keyword_select" id="did" />did</label>
+ <label for="didn">
+        <input type="checkbox" name="keyword_select" id="didn" />didn</label>
+ <label for="discussion">
+        <input type="checkbox" name="keyword_select" id="discussion" />discussion</label>
+ <label for="dnc">
+        <input type="checkbox" name="keyword_select" id="dnc" />dnc</label>
+ <label for="does">
+        <input type="checkbox" name="keyword_select" id="does" />does</label>
+ <label for="doesn">
+        <input type="checkbox" name="keyword_select" id="doesn" />doesn</label>
+ <label for="doing">
+        <input type="checkbox" name="keyword_select" id="doing" />doing</label>
+ <label for="don">
+        <input type="checkbox" name="keyword_select" id="don" />don</label>
+ <label for="donald">
+        <input type="checkbox" name="keyword_select" id="donald" />donald</label>
+ <label for="economy">
+        <input type="checkbox" name="keyword_select" id="economy" />economy</label>
+ <label for="election">
+        <input type="checkbox" name="keyword_select" id="election" />election</label>
+ <label for="emails">
+        <input type="checkbox" name="keyword_select" id="emails" />emails</label>
+ <label for="evidence">
+        <input type="checkbox" name="keyword_select" id="evidence" />evidence</label>
+ <label for="exactly">
+        <input type="checkbox" name="keyword_select" id="exactly" />exactly</label>
+ <label for="fact">
+        <input type="checkbox" name="keyword_select" id="fact" />fact</label>
+ <label for="fake">
+        <input type="checkbox" name="keyword_select" id="fake" />fake</label>
+ <label for="far">
+        <input type="checkbox" name="keyword_select" id="far" />far</label>
+ <label for="fbi">
+        <input type="checkbox" name="keyword_select" id="fbi" />fbi</label>
+ <label for="federal">
+        <input type="checkbox" name="keyword_select" id="federal" />federal</label>
+ <label for="feel">
+        <input type="checkbox" name="keyword_select" id="feel" />feel</label>
+ <label for="food">
+        <input type="checkbox" name="keyword_select" id="food" />food</label>
+ <label for="fox">
+        <input type="checkbox" name="keyword_select" id="fox" />fox</label>
+ <label for="free">
+        <input type="checkbox" name="keyword_select" id="free" />free</label>
+ <label for="fuck">
+        <input type="checkbox" name="keyword_select" id="fuck" />fuck</label>
+ <label for="fucking">
+        <input type="checkbox" name="keyword_select" id="fucking" />fucking</label>
+ <label for="gay">
+        <input type="checkbox" name="keyword_select" id="gay" />gay</label>
+ <label for="general">
+        <input type="checkbox" name="keyword_select" id="general" />general</label>
+ <label for="getting">
+        <input type="checkbox" name="keyword_select" id="getting" />getting</label>
+ <label for="glenn">
+        <input type="checkbox" name="keyword_select" id="glenn" />glenn</label>
+ <label for="god">
+        <input type="checkbox" name="keyword_select" id="god" />god</label>
+ <label for="going">
+        <input type="checkbox" name="keyword_select" id="going" />going</label>
+ <label for="good">
+        <input type="checkbox" name="keyword_select" id="good" />good</label>
+ <label for="gop">
+        <input type="checkbox" name="keyword_select" id="gop" />gop</label>
+ <label for="got">
+        <input type="checkbox" name="keyword_select" id="got" />got</label>
+ <label for="government">
+        <input type="checkbox" name="keyword_select" id="government" />government</label>
+ <label for="great">
+        <input type="checkbox" name="keyword_select" id="great" />great</label>
+ <label for="gt">
+        <input type="checkbox" name="keyword_select" id="gt" />gt</label>
+ <label for="gun">
+        <input type="checkbox" name="keyword_select" id="gun" />gun</label>
+ <label for="guns">
+        <input type="checkbox" name="keyword_select" id="guns" />guns</label>
+ <label for="guy">
+        <input type="checkbox" name="keyword_select" id="guy" />guy</label>
+ <label for="hamas">
+        <input type="checkbox" name="keyword_select" id="hamas" />hamas</label>
+ <label for="hate">
+        <input type="checkbox" name="keyword_select" id="hate" />hate</label>
+ <label for="health">
+        <input type="checkbox" name="keyword_select" id="health" />health</label>
+ <label for="healthcare">
+        <input type="checkbox" name="keyword_select" id="healthcare" />healthcare</label>
+ <label for="hillary">
+        <input type="checkbox" name="keyword_select" id="hillary" />hillary</label>
+ <label for="hope">
+        <input type="checkbox" name="keyword_select" id="hope" />hope</label>
+ <label for="house">
+        <input type="checkbox" name="keyword_select" id="house" />house</label>
+ <label for="id">
+        <input type="checkbox" name="keyword_select" id="id" />id</label>
+ <label for="idea">
+        <input type="checkbox" name="keyword_select" id="idea" />idea</label>
+ <label for="ideas">
+        <input type="checkbox" name="keyword_select" id="ideas" />ideas</label>
+ <label for="income">
+        <input type="checkbox" name="keyword_select" id="income" />income</label>
+ <label for="information">
+        <input type="checkbox" name="keyword_select" id="information" />information</label>
+ <label for="insurance">
+        <input type="checkbox" name="keyword_select" id="insurance" />insurance</label>
+ <label for="internet">
+        <input type="checkbox" name="keyword_select" id="internet" />internet</label>
+ <label for="investigation">
+        <input type="checkbox" name="keyword_select" id="investigation" />investigation</label>
+ <label for="iran">
+        <input type="checkbox" name="keyword_select" id="iran" />iran</label>
+ <label for="iraq">
+        <input type="checkbox" name="keyword_select" id="iraq" />iraq</label>
+ <label for="isn">
+        <input type="checkbox" name="keyword_select" id="isn" />isn</label>
+ <label for="israel">
+        <input type="checkbox" name="keyword_select" id="israel" />israel</label>
+ <label for="issue">
+        <input type="checkbox" name="keyword_select" id="issue" />issue</label>
+ <label for="jews">
+        <input type="checkbox" name="keyword_select" id="jews" />jews</label>
+ <label for="job">
+        <input type="checkbox" name="keyword_select" id="job" />job</label>
+ <label for="jobs">
+        <input type="checkbox" name="keyword_select" id="jobs" />jobs</label>
+ <label for="joe">
+        <input type="checkbox" name="keyword_select" id="joe" />joe</label>
+ <label for="just">
+        <input type="checkbox" name="keyword_select" id="just" />just</label>
+ <label for="kill">
+        <input type="checkbox" name="keyword_select" id="kill" />kill</label>
+ <label for="know">
+        <input type="checkbox" name="keyword_select" id="know" />know</label>
+ <label for="kucinich">
+        <input type="checkbox" name="keyword_select" id="kucinich" />kucinich</label>
+ <label for="law">
+        <input type="checkbox" name="keyword_select" id="law" />law</label>
+ <label for="laws">
+        <input type="checkbox" name="keyword_select" id="laws" />laws</label>
+ <label for="left">
+        <input type="checkbox" name="keyword_select" id="left" />left</label>
+ <label for="let">
+        <input type="checkbox" name="keyword_select" id="let" />let</label>
+ <label for="liberal">
+        <input type="checkbox" name="keyword_select" id="liberal" />liberal</label>
+ <label for="life">
+        <input type="checkbox" name="keyword_select" id="life" />life</label>
+ <label for="like">
+        <input type="checkbox" name="keyword_select" id="like" />like</label>
+ <label for="literally">
+        <input type="checkbox" name="keyword_select" id="literally" />literally</label>
+ <label for="little">
+        <input type="checkbox" name="keyword_select" id="little" />little</label>
+ <label for="live">
+        <input type="checkbox" name="keyword_select" id="live" />live</label>
+ <label for="ll">
+        <input type="checkbox" name="keyword_select" id="ll" />ll</label>
+ <label for="lol">
+        <input type="checkbox" name="keyword_select" id="lol" />lol</label>
+ <label for="long">
+        <input type="checkbox" name="keyword_select" id="long" />long</label>
+ <label for="look">
+        <input type="checkbox" name="keyword_select" id="look" />look</label>
+ <label for="lost">
+        <input type="checkbox" name="keyword_select" id="lost" />lost</label>
+ <label for="lot">
+        <input type="checkbox" name="keyword_select" id="lot" />lot</label>
+ <label for="love">
+        <input type="checkbox" name="keyword_select" id="love" />love</label>
+ <label for="make">
+        <input type="checkbox" name="keyword_select" id="make" />make</label>
+ <label for="makes">
+        <input type="checkbox" name="keyword_select" id="makes" />makes</label>
+ <label for="making">
+        <input type="checkbox" name="keyword_select" id="making" />making</label>
+ <label for="man">
+        <input type="checkbox" name="keyword_select" id="man" />man</label>
+ <label for="market">
+        <input type="checkbox" name="keyword_select" id="market" />market</label>
+ <label for="marriage">
+        <input type="checkbox" name="keyword_select" id="marriage" />marriage</label>
+ <label for="maybe">
+        <input type="checkbox" name="keyword_select" id="maybe" />maybe</label>
+ <label for="mccain">
+        <input type="checkbox" name="keyword_select" id="mccain" />mccain</label>
+ <label for="mean">
+        <input type="checkbox" name="keyword_select" id="mean" />mean</label>
+ <label for="media">
+        <input type="checkbox" name="keyword_select" id="media" />media</label>
+ <label for="message">
+        <input type="checkbox" name="keyword_select" id="message" />message</label>
+ <label for="military">
+        <input type="checkbox" name="keyword_select" id="military" />military</label>
+ <label for="minimum">
+        <input type="checkbox" name="keyword_select" id="minimum" />minimum</label>
+ <label for="mitt">
+        <input type="checkbox" name="keyword_select" id="mitt" />mitt</label>
+ <label for="moderators">
+        <input type="checkbox" name="keyword_select" id="moderators" />moderators</label>
+ <label for="money">
+        <input type="checkbox" name="keyword_select" id="money" />money</label>
+ <label for="moore">
+        <input type="checkbox" name="keyword_select" id="moore" />moore</label>
+ <label for="mosque">
+        <input type="checkbox" name="keyword_select" id="mosque" />mosque</label>
+ <label for="movement">
+        <input type="checkbox" name="keyword_select" id="movement" />movement</label>
+ <label for="nas">
+        <input type="checkbox" name="keyword_select" id="nas" />nas</label>
+ <label for="nazi">
+        <input type="checkbox" name="keyword_select" id="nazi" />nazi</label>
+ <label for="nazis">
+        <input type="checkbox" name="keyword_select" id="nazis" />nazis</label>
+ <label for="need">
+        <input type="checkbox" name="keyword_select" id="need" />need</label>
+ <label for="new">
+        <input type="checkbox" name="keyword_select" id="new" />new</label>
+ <label for="news">
+        <input type="checkbox" name="keyword_select" id="news" />news</label>
+ <label for="ni">
+        <input type="checkbox" name="keyword_select" id="ni" />ni</label>
+ <label for="nif">
+        <input type="checkbox" name="keyword_select" id="nif" />nif</label>
+ <label for="nin">
+        <input type="checkbox" name="keyword_select" id="nin" />nin</label>
+ <label for="nsa">
+        <input type="checkbox" name="keyword_select" id="nsa" />nsa</label>
+ <label for="nthe">
+        <input type="checkbox" name="keyword_select" id="nthe" />nthe</label>
+ <label for="nurl">
+        <input type="checkbox" name="keyword_select" id="nurl" />nurl</label>
+ <label for="obama">
+        <input type="checkbox" name="keyword_select" id="obama" />obama</label>
+ <label for="obamacare">
+        <input type="checkbox" name="keyword_select" id="obamacare" />obamacare</label>
+ <label for="officer">
+        <input type="checkbox" name="keyword_select" id="officer" />officer</label>
+ <label for="oh">
+        <input type="checkbox" name="keyword_select" id="oh" />oh</label>
+ <label for="oil">
+        <input type="checkbox" name="keyword_select" id="oil" />oil</label>
+ <label for="old">
+        <input type="checkbox" name="keyword_select" id="old" />old</label>
+ <label for="option">
+        <input type="checkbox" name="keyword_select" id="option" />option</label>
+ <label for="ows">
+        <input type="checkbox" name="keyword_select" id="ows" />ows</label>
+ <label for="palin">
+        <input type="checkbox" name="keyword_select" id="palin" />palin</label>
+ <label for="party">
+        <input type="checkbox" name="keyword_select" id="party" />party</label>
+ <label for="paul">
+        <input type="checkbox" name="keyword_select" id="paul" />paul</label>
+ <label for="pay">
+        <input type="checkbox" name="keyword_select" id="pay" />pay</label>
+ <label for="people">
+        <input type="checkbox" name="keyword_select" id="people" />people</label>
+ <label for="performed">
+        <input type="checkbox" name="keyword_select" id="performed" />performed</label>
+ <label for="person">
+        <input type="checkbox" name="keyword_select" id="person" />person</label>
+ <label for="personal">
+        <input type="checkbox" name="keyword_select" id="personal" />personal</label>
+ <label for="plan">
+        <input type="checkbox" name="keyword_select" id="plan" />plan</label>
+ <label for="point">
+        <input type="checkbox" name="keyword_select" id="point" />point</label>
+ <label for="police">
+        <input type="checkbox" name="keyword_select" id="police" />police</label>
+ <label for="political">
+        <input type="checkbox" name="keyword_select" id="political" />political</label>
+ <label for="politics">
+        <input type="checkbox" name="keyword_select" id="politics" />politics</label>
+ <label for="poor">
+        <input type="checkbox" name="keyword_select" id="poor" />poor</label>
+ <label for="post">
+        <input type="checkbox" name="keyword_select" id="post" />post</label>
+ <label for="power">
+        <input type="checkbox" name="keyword_select" id="power" />power</label>
+ <label for="president">
+        <input type="checkbox" name="keyword_select" id="president" />president</label>
+ <label for="pretty">
+        <input type="checkbox" name="keyword_select" id="pretty" />pretty</label>
+ <label for="primary">
+        <input type="checkbox" name="keyword_select" id="primary" />primary</label>
+ <label for="private">
+        <input type="checkbox" name="keyword_select" id="private" />private</label>
+ <label for="probably">
+        <input type="checkbox" name="keyword_select" id="probably" />probably</label>
+ <label for="problem">
+        <input type="checkbox" name="keyword_select" id="problem" />problem</label>
+ <label for="protest">
+        <input type="checkbox" name="keyword_select" id="protest" />protest</label>
+ <label for="public">
+        <input type="checkbox" name="keyword_select" id="public" />public</label>
+ <label for="question">
+        <input type="checkbox" name="keyword_select" id="question" />question</label>
+ <label for="questions">
+        <input type="checkbox" name="keyword_select" id="questions" />questions</label>
+ <label for="racist">
+        <input type="checkbox" name="keyword_select" id="racist" />racist</label>
+ <label for="read">
+        <input type="checkbox" name="keyword_select" id="read" />read</label>
+ <label for="real">
+        <input type="checkbox" name="keyword_select" id="real" />real</label>
+ <label for="really">
+        <input type="checkbox" name="keyword_select" id="really" />really</label>
+ <label for="reason">
+        <input type="checkbox" name="keyword_select" id="reason" />reason</label>
+ <label for="reddit">
+        <input type="checkbox" name="keyword_select" id="reddit" />reddit</label>
+ <label for="reform">
+        <input type="checkbox" name="keyword_select" id="reform" />reform</label>
+ <label for="refugees">
+        <input type="checkbox" name="keyword_select" id="refugees" />refugees</label>
+ <label for="regarding">
+        <input type="checkbox" name="keyword_select" id="regarding" />regarding</label>
+ <label for="religion">
+        <input type="checkbox" name="keyword_select" id="religion" />religion</label>
+ <label for="religious">
+        <input type="checkbox" name="keyword_select" id="religious" />religious</label>
+ <label for="reminder">
+        <input type="checkbox" name="keyword_select" id="reminder" />reminder</label>
+ <label for="removal">
+        <input type="checkbox" name="keyword_select" id="removal" />removal</label>
+ <label for="removed">
+        <input type="checkbox" name="keyword_select" id="removed" />removed</label>
+ <label for="report">
+        <input type="checkbox" name="keyword_select" id="report" />report</label>
+ <label for="republican">
+        <input type="checkbox" name="keyword_select" id="republican" />republican</label>
+ <label for="republicans">
+        <input type="checkbox" name="keyword_select" id="republicans" />republicans</label>
+ <label for="result">
+        <input type="checkbox" name="keyword_select" id="result" />result</label>
+ <label for="rich">
+        <input type="checkbox" name="keyword_select" id="rich" />rich</label>
+ <label for="right">
+        <input type="checkbox" name="keyword_select" id="right" />right</label>
+ <label for="rights">
+        <input type="checkbox" name="keyword_select" id="rights" />rights</label>
+ <label for="romney">
+        <input type="checkbox" name="keyword_select" id="romney" />romney</label>
+ <label for="ron">
+        <input type="checkbox" name="keyword_select" id="ron" />ron</label>
+ <label for="rubio">
+        <input type="checkbox" name="keyword_select" id="rubio" />rubio</label>
+ <label for="rules">
+        <input type="checkbox" name="keyword_select" id="rules" />rules</label>
+ <label for="rush">
+        <input type="checkbox" name="keyword_select" id="rush" />rush</label>
+ <label for="russia">
+        <input type="checkbox" name="keyword_select" id="russia" />russia</label>
+ <label for="russian">
+        <input type="checkbox" name="keyword_select" id="russian" />russian</label>
+ <label for="ryan">
+        <input type="checkbox" name="keyword_select" id="ryan" />ryan</label>
+ <label for="said">
+        <input type="checkbox" name="keyword_select" id="said" />said</label>
+ <label for="sanders">
+        <input type="checkbox" name="keyword_select" id="sanders" />sanders</label>
+ <label for="santorum">
+        <input type="checkbox" name="keyword_select" id="santorum" />santorum</label>
+ <label for="say">
+        <input type="checkbox" name="keyword_select" id="say" />say</label>
+ <label for="saying">
+        <input type="checkbox" name="keyword_select" id="saying" />saying</label>
+ <label for="says">
+        <input type="checkbox" name="keyword_select" id="says" />says</label>
+ <label for="school">
+        <input type="checkbox" name="keyword_select" id="school" />school</label>
+ <label for="security">
+        <input type="checkbox" name="keyword_select" id="security" />security</label>
+ <label for="shill">
+        <input type="checkbox" name="keyword_select" id="shill" />shill</label>
+ <label for="shit">
+        <input type="checkbox" name="keyword_select" id="shit" />shit</label>
+ <label for="shutdown">
+        <input type="checkbox" name="keyword_select" id="shutdown" />shutdown</label>
+ <label for="sopa">
+        <input type="checkbox" name="keyword_select" id="sopa" />sopa</label>
+ <label for="speech">
+        <input type="checkbox" name="keyword_select" id="speech" />speech</label>
+ <label for="spending">
+        <input type="checkbox" name="keyword_select" id="spending" />spending</label>
+ <label for="state">
+        <input type="checkbox" name="keyword_select" id="state" />state</label>
+ <label for="states">
+        <input type="checkbox" name="keyword_select" id="states" />states</label>
+ <label for="stimulus">
+        <input type="checkbox" name="keyword_select" id="stimulus" />stimulus</label>
+ <label for="stop">
+        <input type="checkbox" name="keyword_select" id="stop" />stop</label>
+ <label for="street">
+        <input type="checkbox" name="keyword_select" id="street" />street</label>
+ <label for="stupid">
+        <input type="checkbox" name="keyword_select" id="stupid" />stupid</label>
+ <label for="subreddit">
+        <input type="checkbox" name="keyword_select" id="subreddit" />subreddit</label>
+ <label for="support">
+        <input type="checkbox" name="keyword_select" id="support" />support</label>
+ <label for="supporters">
+        <input type="checkbox" name="keyword_select" id="supporters" />supporters</label>
+ <label for="sure">
+        <input type="checkbox" name="keyword_select" id="sure" />sure</label>
+ <label for="syria">
+        <input type="checkbox" name="keyword_select" id="syria" />syria</label>
+ <label for="talking">
+        <input type="checkbox" name="keyword_select" id="talking" />talking</label>
+ <label for="tax">
+        <input type="checkbox" name="keyword_select" id="tax" />tax</label>
+ <label for="taxes">
+        <input type="checkbox" name="keyword_select" id="taxes" />taxes</label>
+ <label for="tea">
+        <input type="checkbox" name="keyword_select" id="tea" />tea</label>
+ <label for="tell">
+        <input type="checkbox" name="keyword_select" id="tell" />tell</label>
+ <label for="thanks">
+        <input type="checkbox" name="keyword_select" id="thanks" />thanks</label>
+ <label for="thing">
+        <input type="checkbox" name="keyword_select" id="thing" />thing</label>
+ <label for="things">
+        <input type="checkbox" name="keyword_select" id="things" />things</label>
+ <label for="think">
+        <input type="checkbox" name="keyword_select" id="think" />think</label>
+ <label for="thought">
+        <input type="checkbox" name="keyword_select" id="thought" />thought</label>
+ <label for="time">
+        <input type="checkbox" name="keyword_select" id="time" />time</label>
+ <label for="today">
+        <input type="checkbox" name="keyword_select" id="today" />today</label>
+ <label for="torture">
+        <input type="checkbox" name="keyword_select" id="torture" />torture</label>
+ <label for="troll">
+        <input type="checkbox" name="keyword_select" id="troll" />troll</label>
+ <label for="true">
+        <input type="checkbox" name="keyword_select" id="true" />true</label>
+ <label for="trump">
+        <input type="checkbox" name="keyword_select" id="trump" />trump</label>
+ <label for="trying">
+        <input type="checkbox" name="keyword_select" id="trying" />trying</label>
+ <label for="tsa">
+        <input type="checkbox" name="keyword_select" id="tsa" />tsa</label>
+ <label for="understand">
+        <input type="checkbox" name="keyword_select" id="understand" />understand</label>
+ <label for="union">
+        <input type="checkbox" name="keyword_select" id="union" />union</label>
+ <label for="unions">
+        <input type="checkbox" name="keyword_select" id="unions" />unions</label>
+ <label for="url">
+        <input type="checkbox" name="keyword_select" id="url" />url</label>
+ <label for="use">
+        <input type="checkbox" name="keyword_select" id="use" />use</label>
+ <label for="used">
+        <input type="checkbox" name="keyword_select" id="used" />used</label>
+ <label for="user">
+        <input type="checkbox" name="keyword_select" id="user" />user</label>
+ <label for="users">
+        <input type="checkbox" name="keyword_select" id="users" />users</label>
+ <label for="ve">
+        <input type="checkbox" name="keyword_select" id="ve" />ve</label>
+ <label for="video">
+        <input type="checkbox" name="keyword_select" id="video" />video</label>
+ <label for="vote">
+        <input type="checkbox" name="keyword_select" id="vote" />vote</label>
+ <label for="voted">
+        <input type="checkbox" name="keyword_select" id="voted" />voted</label>
+ <label for="voter">
+        <input type="checkbox" name="keyword_select" id="voter" />voter</label>
+ <label for="voters">
+        <input type="checkbox" name="keyword_select" id="voters" />voters</label>
+ <label for="votes">
+        <input type="checkbox" name="keyword_select" id="votes" />votes</label>
+ <label for="voting">
+        <input type="checkbox" name="keyword_select" id="voting" />voting</label>
+ <label for="wage">
+        <input type="checkbox" name="keyword_select" id="wage" />wage</label>
+ <label for="wall">
+        <input type="checkbox" name="keyword_select" id="wall" />wall</label>
+ <label for="want">
+        <input type="checkbox" name="keyword_select" id="want" />want</label>
+ <label for="war">
+        <input type="checkbox" name="keyword_select" id="war" />war</label>
+ <label for="water">
+        <input type="checkbox" name="keyword_select" id="water" />water</label>
+ <label for="way">
+        <input type="checkbox" name="keyword_select" id="way" />way</label>
+ <label for="weapons">
+        <input type="checkbox" name="keyword_select" id="weapons" />weapons</label>
+ <label for="weiner">
+        <input type="checkbox" name="keyword_select" id="weiner" />weiner</label>
+ <label for="white">
+        <input type="checkbox" name="keyword_select" id="white" />white</label>
+ <label for="wikileaks">
+        <input type="checkbox" name="keyword_select" id="wikileaks" />wikileaks</label>
+ <label for="win">
+        <input type="checkbox" name="keyword_select" id="win" />win</label>
+ <label for="women">
+        <input type="checkbox" name="keyword_select" id="women" />women</label>
+ <label for="won">
+        <input type="checkbox" name="keyword_select" id="won" />won</label>
+ <label for="work">
+        <input type="checkbox" name="keyword_select" id="work" />work</label>
+ <label for="world">
+        <input type="checkbox" name="keyword_select" id="world" />world</label>
+ <label for="wrong">
+        <input type="checkbox" name="keyword_select" id="wrong" />wrong</label>
+ <label for="yeah">
+        <input type="checkbox" name="keyword_select" id="yeah" />yeah</label>
+ <label for="year">
+        <input type="checkbox" name="keyword_select" id="year" />year</label>
+ <label for="years">
+        <input type="checkbox" name="keyword_select" id="years" />years</label>
+ <label for="yes">
+        <input type="checkbox" name="keyword_select" id="yes" />yes</label>
+ <label for="zimmerman">
+        <input type="checkbox" name="keyword_select" id="zimmerman" />zimmerman</label>
+    </div>
+  </div>
+
+
+
+	<form id='entryinfo' method='post' action='index' >
+
+              <h4>Here are some other options to ensure maximum graphability. </h4>
+	      <input type="text" name="startdate" placeholder="2011-11-01"> Custom startdate?<br>
+	      <input type="text" name="enddate" placeholder="2017-11-30"> Custom enddate?<br>
+	      <input type="checkbox" name="option" value="normalize"> Normalize by total count?<br>
+	      <input type="checkbox" name="option" value="difference"> Difference between TWO subreddits?<br>
+	      <input type="checkbox" name="option" value="cumsum"> Total cumulative sum?<br>
+	      <input type="checkbox" name="option" value="quantile"> Remove outliers?<br>
+	   <p>
+	   <input type='submit' value="Let's get graphing!"/>
+	   </p>
+	</form>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+
+  <style>
+
+  .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: #3e8e41;
+  }
+
+  #myInput {
+      border-box: box-sizing;
+      background-image: url('searchicon.png');
+      background-position: 14px 12px;
+      background-repeat: no-repeat;
+      font-size: 16px;
+      padding: 14px 20px 12px 45px;
+      border: none;
+      border-bottom: 1px solid #ddd;
+  }
+
+  #myInput:focus {outline: 3px solid #ddd;}
+
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f6f6f6;
+      min-width: 230px;
+      overflow: auto;
+      border: 1px solid #ddd;
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  .dropdown a:hover {background-color: #ddd}
+
+  .show {display:block;}
+
+
+
+  .multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+#checkboxes2 {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes2 label {
+  display: block;
+}
+
+#checkboxes2 label:hover {
+  background-color: #1e90ff;
+}
+
+  </style>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+          if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+          } else {
+              a[i].style.display = "none";
+          }
+      }
+  }
+
+  var expanded1 = false;
+
+  function showCheckboxes(c) {
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded1) {
+    checkboxes.style.display = "block";
+    expanded1 = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded1 = false;
+  }
+}
+
+
+var expanded2 = false;
+
+function showCheckboxes2() {
+var checkboxes = document.getElementById("checkboxes2");
+if (!expanded2) {
+  checkboxes.style.display = "block";
+  expanded2 = true;
+} else {
+  checkboxes.style.display = "none";
+  expanded2 = false;
+}
+}
+
+  </script>
+
+</html>
