@@ -54,17 +54,17 @@ def frequencies_run():
         print(options2plot)
 
         # Plotting the graph.
-        data_directory = '/home/jayckaiser/Documents/jayckaiser-reddit-politics-heroku/data/by_subs_frequencies_100/'
+        data_directory = './data/by_subs_frequencies_100/'
 
-        combined_df = create_teh_dataframe(data_directory, subreddits=subs2plot, keywords=words2plot)
+        combined_df = GraphPlotting.create_teh_dataframe(data_directory, subreddits=subs2plot, keywords=words2plot)
 
         difference = False
 
-        plot_these = make_dataframes_graphable(combined_df, subs2plot,
-                                               datetimestart=startdate, datetimeend=enddate,
-                                               **options2plot
-                                               )
-        plot_teh_graphs(plot_these, subs2plot, words2plot, difference=difference)
+        GraphPlotting.plot_these = make_dataframes_graphable(combined_df, subs2plot,
+                                                             datetimestart=startdate, datetimeend=enddate,
+                                                             **options2plot
+                                                             )
+        GraphPlotting.plot_teh_graphs(plot_these, subs2plot, words2plot, difference=difference)
 
 
 @app.route('/networks', methods=['GET', 'POST'])
