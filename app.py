@@ -57,11 +57,12 @@ def frequencies_run():
 
         difference = False
 
-       plot_these =  GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
+        plot_these =  GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
                                                              datetimestart=startdate, datetimeend=enddate,
                                                              **options2plot
                                                              )
-        GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
+        script, div = GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
+        return render_template("graph.html", script=script, div=div)
 
 
 @app.route('/networks', methods=['GET', 'POST'])
