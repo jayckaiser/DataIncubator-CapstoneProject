@@ -17,6 +17,7 @@ import os
 from datetime import datetime
 from bokeh.plotting import figure, output_file, show
 from bokeh.palettes import Dark2_5 as palette
+from bokeh.embed import components
 
 
 default_s = ['the_donald', 'hillaryclinton']
@@ -94,6 +95,9 @@ def cumsum_dfs(graphable_dataframes, subreddits):
 
 
 def remove_outliers_from_df(graphable_dfs, subreddits, q=0.99):
+    if q is True:
+        q = 0.99
+
     removed_outliers_list = []
 
     for df in graphable_dfs:
@@ -107,7 +111,7 @@ def remove_outliers_from_df(graphable_dfs, subreddits, q=0.99):
     return removed_outliers_list
 
 
-def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False, quantile=False):
+def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False, quantile=0.0):
     """
     Plot the frequency data into a graph, with many parameters for customization.
 
@@ -205,7 +209,8 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     p.legend.location = "top_left"
     p.legend.click_policy = 'hide'
 
-    show(p)
+    script, div = components(p)
+    return script, div
 
 
 if __name__ == "__main__":

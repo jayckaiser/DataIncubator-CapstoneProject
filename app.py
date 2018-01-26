@@ -59,7 +59,7 @@ def frequencies_run():
 
         plot_these =  GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
                                                              datetimestart=startdate, datetimeend=enddate,
-                                                             **options2plot
+                                                             **{opt:True for opt in options2plot}
                                                              )
         script, div = GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
         return render_template("graph.html", script=script, div=div)
@@ -70,6 +70,8 @@ def networks_run():
     pass
 
 
+# Functions used above.
+
 def retrieve_options():
     return request.values.getlist('option')
 
@@ -79,7 +81,7 @@ def retrieve_subreddits():
 
 
 def retrieve_keywords():
-    return request.getlist('keyword_select')
+    return request.values.getlist('keyword_select')
 
 
 def convert_datetimes(datetime):
