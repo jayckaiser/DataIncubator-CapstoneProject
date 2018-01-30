@@ -13,10 +13,12 @@ Updated Jan 25, 2018
 
 import pandas as pd
 import os
-#import matplotlib.pyplot as plt
 from datetime import datetime
-from bokeh.plotting import figure, output_file, show
+from bokeh.plotting import figure, show
 from bokeh.palettes import Dark2_5 as palette
+from bokeh.models.formatters import DatetimeTickFormatter
+from bokeh.models.tools import HoverTool
+from bokeh.models import ColumnDataSource
 from bokeh.embed import components
 
 
@@ -70,7 +72,9 @@ def find_difference(graphable_dataframes, subreddits):
     differenced_dataframes = []
 
     for df in graphable_dataframes[:]:
-        difference_df = df[subreddits[0]].fillna(0) - df[subreddits[1]].fillna(0)
+        difference_df = pd.DataFrame()
+
+        difference_df[subreddits[0]] = df[subreddits[0]].fillna(0) - df[subreddits[1]].fillna(0)
 
         differenced_dataframes.append(difference_df)
 
@@ -111,7 +115,19 @@ def remove_outliers_from_df(graphable_dfs, subreddits, q=0.99):
     return removed_outliers_list
 
 
-def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False, quantile=0.0):
+def smoothify(graphable_dataframes, subreddits, smoothing_rate=10):
+    smoothed_dfs = []
+
+    for df in graphable_dataframes:
+
+        smoothed_df = df.resample('1d').sum().fillna(0).rolling(window=smoothing_rate, min_periods=1).mean()
+
+        smoothed_dfs.append(smoothed_df)
+
+    return smoothed_dfs
+
+
+def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False, quantile=0.0, smooth=0.0):
     """
     Plot the frequency data into a graph, with many parameters for customization.
 
@@ -142,6 +158,11 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestar
     if len(dataframe_list[0].columns) != 2:
         difference = False
 
+    # smoothing is unnecessary when cumulative-summing
+    if cumsum:
+        smooth = 0
+
+
     # we can normalize each count by the total number of comments
     if normalize:  # divide each dataframe by its total
         graphable_dataframes = normalize_dataframes(dataframe_list)
@@ -163,52 +184,44 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestar
     if difference:
         graphable_dataframes = find_difference(graphable_dataframes, subreddits)
 
+    if smooth:
+        graphable_dataframes = smoothify(graphable_dataframes, subreddits, smooth)
+
     return graphable_dataframes
-
-
-def plot_teh_graphs_matplotlib(graphable_dataframes, subreddits=default_s, keywords=default_k, difference=False, style='seaborn-darkgrid'):
-    plt.style.use(style)
-    line_types = [':', '--', '-.', '-'] * 3
-
-    for i, df in enumerate(graphable_dataframes):
-
-        if difference:
-            plt.plot(df, linestyle=line_types[i],
-                     label='r/{} - r/{}: "{}"'.format(subreddits[0], subreddits[1], keywords[i + 1]))
-
-        else:
-            for j, (subreddit, line_type) in enumerate(zip(subreddits, line_types)):
-                plt.plot(df.index, df[subreddit], linestyle=line_types[i],
-                         label='r/{}: "{}"'.format(subreddits[j], keywords[i + 1]))
-
-    plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
-               ncol=2, mode="expand", borderaxespad=0., fontsize='x-large')
-
-    fig = plt.gcf()
-    fig.set_size_inches(20, 15)
-
-    plt.show()
-    return
 
 
 def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference=False):
     colors = list(palette)
 
-    p = figure(plot_width=800, plot_height=800, x_axis_type='datetime')
+    p = figure(plot_width=800, plot_height=800, x_axis_type='datetime', tools="pan,wheel_zoom,box_zoom,reset,hover")
 
     for i, df in enumerate(graphable_dataframes):
+
+        df['viewable_dates'] = [x.strftime("%Y-%m-%d") for x in df.index]
+
+        df = df.reset_index()
+
         if difference:
+
             name = 'r/{} - r/{}: "{}"'.format(subreddits[0], subreddits[1], keywords[i + 1])
-            p.line(x=df.index, y=df.values, legend=name, color=colors[i])
+            p.line(x='date', y=subreddits[0], source=ColumnDataSource(df),
+                   legend=name, color=colors[i])
 
         else:
             for j, sub in enumerate(subreddits):
                 name = 'r/{}: "{}"'.format(subreddits[j], keywords[i + 1])
-                p.line(x=df.index, y=df[sub], legend=name, color=colors[len(subreddits) * j + i])
+                p.line(x='date', y=sub, source=ColumnDataSource(df),
+                       legend=name, color=colors[len(subreddits) * j + i])
 
     p.legend.location = "top_left"
     p.legend.click_policy = 'hide'
 
+    hover = p.select(dict(type=HoverTool))
+    tips = [('when', '@viewable_dates')]
+    hover.tooltips = tips
+    hover.mode = 'mouse'
+
+    #show(p)
     script, div = components(p)
     return script, div
 
@@ -234,10 +247,11 @@ if __name__ == "__main__":
     plot_these = make_dataframes_graphable(combined_df, subreddits,
                                            datetimestart=None,  #datetime(2016, 10, 1),
                                            datetimeend=None,  #datetime(2017, 5, 30),
-                                           normalize=True,
+                                           normalize=False,
                                            difference=difference,
                                            cumsum=False,
-                                           quantile=0.99
+                                           quantile=0.99,
+                                           smooth=10
                                            )
     #plot_teh_graphs_matplotlib(plot_these, subreddits, keywords, difference=difference)
     plot_teh_graphs_bokeh(plot_these, subreddits, keywords, difference=difference)
