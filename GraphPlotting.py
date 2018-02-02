@@ -221,11 +221,9 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     hover.tooltips = tips
     hover.mode = 'mouse'
 
-    output_file('./templates/GraphPlotting.py')
-    save(p)
     #show(p)
-    # script, div = components(p)
-    # return script, div
+    script, div = components(p)
+    return script, div
 
 
 if __name__ == "__main__":

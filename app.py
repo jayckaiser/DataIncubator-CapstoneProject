@@ -60,8 +60,8 @@ def frequencies_run():
                                                              datetimestart=startdate, datetimeend=enddate,
                                                              **plot_options
                                                               )
-        GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
-        return render_template("GraphPlotting.html")
+        script, div = GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
+        return render_template("graph.html", script=script, div=div)
 
 
 @app.route('/rankings', methods=['GET', 'POST'])
