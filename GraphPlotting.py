@@ -14,7 +14,7 @@ Updated Jan 25, 2018
 import pandas as pd
 import os
 from datetime import datetime
-from bokeh.plotting import figure, show
+from bokeh.plotting import figure, save, output_file
 from bokeh.palettes import Dark2_5 as palette
 from bokeh.models.formatters import DatetimeTickFormatter
 from bokeh.models.tools import HoverTool
@@ -221,9 +221,11 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     hover.tooltips = tips
     hover.mode = 'mouse'
 
+    output_file('./templates/GraphPlotting.py')
+    save(p)
     #show(p)
-    script, div = components(p)
-    return script, div
+    # script, div = components(p)
+    # return script, div
 
 
 if __name__ == "__main__":
