@@ -10,10 +10,7 @@ Created 12/23/2017
 
 import os
 from flask import Flask, render_template, request
-from bokeh.plotting import figure
-from bokeh.embed import components
 from datetime import date
-from dateutil.relativedelta import relativedelta
 import GraphPlotting
 
 app = Flask(__name__)
@@ -55,19 +52,21 @@ def frequencies_run():
 
         combined_df = GraphPlotting.create_teh_dataframe(data_directory, subreddits=subs2plot, keywords=words2plot)
 
-        difference = False
+        plot_options = {opt: True for opt in options2plot}
 
-        plot_these =  GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
+        difference = ('difference' in plot_options)
+
+        plot_these = GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
                                                              datetimestart=startdate, datetimeend=enddate,
-                                                             **{opt:True for opt in options2plot}
-                                                             )
+                                                             **plot_options
+                                                              )
         script, div = GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
         return render_template("graph.html", script=script, div=div)
 
 
-@app.route('/networks', methods=['GET', 'POST'])
+@app.route('/rankings', methods=['GET', 'POST'])
 def networks_run():
-    pass
+    return render_template("UsersPlotting.html")
 
 
 # Functions used above.
