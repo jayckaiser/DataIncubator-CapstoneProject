@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9c115d-0a2a-45af-a956-b14d731b595d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/GraphPlotting.py" afterPath="$PROJECT_DIR$/GraphPlotting.py" />
+      <change beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GraphPlotting.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GraphPlotting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="189" column="61" lean-forward="false" selection-start-line="189" selection-start-column="61" selection-end-line="189" selection-end-column="61" />
+            <state relative-caret-position="720">
+              <caret line="133" column="181" lean-forward="false" selection-start-line="133" selection-start-column="181" selection-end-line="133" selection-end-column="181" />
               <folding>
                 <element signature="e#48#207#1" expanded="false" />
                 <element signature="e#209#228#0" expanded="true" />
@@ -27,16 +27,19 @@
                 <element signature="e#1993#2286#0" expanded="false" />
                 <element signature="e#2343#2689#0" expanded="false" />
                 <element signature="e#2760#3162#0" expanded="false" />
+                <element signature="e#3225#3456#0" expanded="false" />
+                <element signature="e#3645#5981#0" expanded="false" />
+                <element signature="e#6077#7174#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state relative-caret-position="270">
+              <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
               <folding>
                 <element signature="e#50#59#0" expanded="true" />
               </folding>
@@ -61,8 +64,8 @@
       <list>
         <option value="$PROJECT_DIR$/NetworkPlotting.py" />
         <option value="$PROJECT_DIR$/UsersPlotting.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/GraphPlotting.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -232,7 +235,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -250,6 +253,9 @@
             <element signature="e#1993#2286#0" expanded="false" />
             <element signature="e#2343#2689#0" expanded="false" />
             <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5981#0" expanded="false" />
+            <element signature="e#6077#7174#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -277,6 +283,9 @@
             <element signature="e#1993#2286#0" expanded="false" />
             <element signature="e#2343#2689#0" expanded="false" />
             <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5981#0" expanded="false" />
+            <element signature="e#6077#7174#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -321,6 +330,9 @@
             <element signature="e#1993#2286#0" expanded="false" />
             <element signature="e#2343#2689#0" expanded="false" />
             <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5981#0" expanded="false" />
+            <element signature="e#6077#7174#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -355,6 +367,9 @@
             <element signature="e#1993#2286#0" expanded="false" />
             <element signature="e#2343#2689#0" expanded="false" />
             <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5981#0" expanded="false" />
+            <element signature="e#6077#7174#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -379,6 +394,9 @@
             <element signature="e#1993#2286#0" expanded="false" />
             <element signature="e#2343#2689#0" expanded="false" />
             <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5981#0" expanded="false" />
+            <element signature="e#6077#7174#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -407,20 +425,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-          <folding>
-            <element signature="e#50#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="189" column="61" lean-forward="false" selection-start-line="189" selection-start-column="61" selection-end-line="189" selection-end-column="61" />
+        <state relative-caret-position="720">
+          <caret line="133" column="181" lean-forward="false" selection-start-line="133" selection-start-column="181" selection-end-line="133" selection-end-column="181" />
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
@@ -430,6 +438,19 @@
             <element signature="e#1993#2286#0" expanded="false" />
             <element signature="e#2343#2689#0" expanded="false" />
             <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5981#0" expanded="false" />
+            <element signature="e#6077#7174#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+          <folding>
+            <element signature="e#50#59#0" expanded="true" />
           </folding>
         </state>
       </provider>

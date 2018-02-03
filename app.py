@@ -73,7 +73,10 @@ def frequencies_run():
 
 @app.route('/rankings', methods=['GET', 'POST'])
 def networks_run():
-    return render_template("UsersPlotting.html")
+    if request.method == 'GET':
+        return render_template('UsersPlotting.html')
+    else:
+        return render_template('UsersPlotting.html')
 
 
 # Functions used above.
