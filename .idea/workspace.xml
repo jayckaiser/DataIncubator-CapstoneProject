@@ -3,7 +3,209 @@
   <component name="ChangeListManager">
     <list default="true" id="ba9c115d-0a2a-45af-a956-b14d731b595d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/GraphPlotting.py" afterPath="$PROJECT_DIR$/GraphPlotting.py" />
-      <change beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/2012elections.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/2016_elections.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/acta.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/agorism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/alloccupy.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/alltheleft.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/americangovernment.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/americanpolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/americanselect.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchistnews.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarcho_capitalism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchobjectivism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchy101.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anonops.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anonymous.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/antiwar.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anythinggoesnews.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/ask_political_science.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/ask_politics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/asktrumpsupporters.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/auinternetaccess.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/austrian_economics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/authoritarian.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/bad_cop_no_donut.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/badgovnofreedom.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/basicincome.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/bencarson.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/boycotthollywood.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/bullmooseparty.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/business.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/campaigns.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/carly_fiorina.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/cascadia.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/censorship.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/centrist.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/chrischristie.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/christian_ancaps.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/cispa.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/classical_liberals.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/communism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/comparative.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/conservative.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/conservatives.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/conspiracy.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/conspiratard.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/cornbreadliberals.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/crimethinccollective.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/darknetplan.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/debateacommunist.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/debatecommunism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/debatefascism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/democracy.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/democrats.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/demsocialist.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/descentintotyranny.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/doctorswithoutborders.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/economics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/electionpolls.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/electionreform.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/elections.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/endlesswar.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/enoughobamaspam.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/enoughpaulspam.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/environment.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/evolutionreddit.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/fairtax.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/fia.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/firstamendment.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/flgovernment.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/flushthetpp.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/forecast2016.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/futuristparty.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/garyjohnson.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/good_cop_free_donut.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/government.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/greed.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/green.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/green_anarchism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/greenparty.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/gunpolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/gunsarecool.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/hackbloc.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/hillaryclinton.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/hillaryforamerica.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/history.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/humanrights.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/illinoispolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/internationalbusiness.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/internetdeclaration.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/internetdefense.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/israelexposed.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/iwantout.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/iww.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/jillstein.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/jindal.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/justice.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/kasichforpresident.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/killhollywood.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/labor.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/leftcommunism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/leninism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/liberal.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarian.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertariandebates.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarianleft.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarianmeme.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertariansocialism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarianwomen.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/liberty.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/marco_rubio.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/martinomalley.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/masspolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/mcmullin.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/mensrights.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/meshnet.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/missouripolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/moderatepolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/monarchism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/neoprogs.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/neutralpolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/new_right.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/news.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/nsa.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/nsaleaks.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/obama.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/objectivism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/occupy.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/occupywallstreet.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/opelectronicleviathan.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/operationgrabass.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/operationpullryan.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/paleoconservative.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/paul.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/peoplesparty.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/petition.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/pirateparty.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politic.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalactivism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicaldiscussion.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalfactchecking.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalhumor.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalmoderation.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalphilosophy.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalpics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalpredictions.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalscience.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicaltweets.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicsdebate.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicsinamerica.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/pragmatism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/privacy.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/prochoice.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/progressive.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/progun.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/projectfactcheck.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/projectoverhaul.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/randpaul.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/redditactivism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/republican.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/republicans.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/republicofpolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/restorethefourth.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/ricksantorum.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/romney.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/ronpaul.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/rootstrikers.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/rpac.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/runforit.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/rvbdebates.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/rwb.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/sandersforpresident.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/savetheconstitution.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/smallrevolutions.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/socialdemocracy.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/socialism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/sopa.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/stateoftheunion.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/supportthetpp.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/techpolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/tedcruz.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/testpac.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/the_donald.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/thewarondrugs.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/thirdpartyroundtable.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/timetolegalize.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/troubledteens.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/truelibertarian.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/trueobjectivism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/truepolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/union.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/usanews.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/uspolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/utahpolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/virginiapolitics.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/voluntarism.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/voting.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/watchingcongress.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/wealth.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/wikileaks.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/worldunity.pkl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/yro.pkl" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,30 +216,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GraphPlotting.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GraphPlotting.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state relative-caret-position="234">
+              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
                 <element signature="e#48#207#1" expanded="false" />
                 <element signature="e#209#228#0" expanded="true" />
-                <element signature="e#1432#1623#0" expanded="false" />
-                <element signature="e#1698#1805#0" expanded="false" />
-                <element signature="e#1867#2160#0" expanded="false" />
-                <element signature="e#2217#2563#0" expanded="false" />
-                <element signature="e#2634#3036#0" expanded="false" />
-                <element signature="e#3111#3342#0" expanded="false" />
+                <element signature="e#1558#1749#0" expanded="false" />
+                <element signature="e#1824#1931#0" expanded="false" />
+                <element signature="e#1993#2286#0" expanded="false" />
+                <element signature="e#2343#2689#0" expanded="false" />
+                <element signature="e#2760#3162#0" expanded="false" />
+                <element signature="e#3225#3456#0" expanded="false" />
+                <element signature="e#3645#5938#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="54" column="45" lean-forward="false" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+            <state relative-caret-position="774">
+              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
               <folding>
                 <element signature="e#50#59#0" expanded="true" />
               </folding>
@@ -62,16 +265,16 @@
       <list>
         <option value="$PROJECT_DIR$/NetworkPlotting.py" />
         <option value="$PROJECT_DIR$/UsersPlotting.py" />
-        <option value="$PROJECT_DIR$/GraphPlotting.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/GraphPlotting.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="992" />
+    <option name="y" value="24" />
     <option name="width" value="928" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -119,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.UsersPlotting">
+  <component name="RunManager" selected="Python.GraphPlotting">
     <configuration name="GraphPlotting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -181,8 +384,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.UsersPlotting" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GraphPlotting" />
+        <item index="0" class="java.lang.String" itemvalue="Python.GraphPlotting" />
+        <item index="1" class="java.lang.String" itemvalue="Python.UsersPlotting" />
         <item index="2" class="java.lang.String" itemvalue="Python.NetworkPlotting" />
       </list>
     </recent_temporary>
@@ -204,15 +407,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1857" height="1092" extended-state="6" />
+    <frame x="992" y="24" width="928" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.033296943" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06740332" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32946378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33926702" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3387271" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -245,12 +448,13 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#1432#1623#0" expanded="false" />
-            <element signature="e#1698#1805#0" expanded="false" />
-            <element signature="e#1867#2160#0" expanded="false" />
-            <element signature="e#2217#2563#0" expanded="false" />
-            <element signature="e#2634#3036#0" expanded="false" />
-            <element signature="e#3111#3342#0" expanded="false" />
+            <element signature="e#1558#1749#0" expanded="false" />
+            <element signature="e#1824#1931#0" expanded="false" />
+            <element signature="e#1993#2286#0" expanded="false" />
+            <element signature="e#2343#2689#0" expanded="false" />
+            <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5938#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -272,12 +476,13 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#1432#1623#0" expanded="false" />
-            <element signature="e#1698#1805#0" expanded="false" />
-            <element signature="e#1867#2160#0" expanded="false" />
-            <element signature="e#2217#2563#0" expanded="false" />
-            <element signature="e#2634#3036#0" expanded="false" />
-            <element signature="e#3111#3342#0" expanded="false" />
+            <element signature="e#1558#1749#0" expanded="false" />
+            <element signature="e#1824#1931#0" expanded="false" />
+            <element signature="e#1993#2286#0" expanded="false" />
+            <element signature="e#2343#2689#0" expanded="false" />
+            <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5938#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -316,12 +521,13 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#1432#1623#0" expanded="false" />
-            <element signature="e#1698#1805#0" expanded="false" />
-            <element signature="e#1867#2160#0" expanded="false" />
-            <element signature="e#2217#2563#0" expanded="false" />
-            <element signature="e#2634#3036#0" expanded="false" />
-            <element signature="e#3111#3342#0" expanded="false" />
+            <element signature="e#1558#1749#0" expanded="false" />
+            <element signature="e#1824#1931#0" expanded="false" />
+            <element signature="e#1993#2286#0" expanded="false" />
+            <element signature="e#2343#2689#0" expanded="false" />
+            <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5938#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -350,12 +556,13 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#1432#1623#0" expanded="false" />
-            <element signature="e#1698#1805#0" expanded="false" />
-            <element signature="e#1867#2160#0" expanded="false" />
-            <element signature="e#2217#2563#0" expanded="false" />
-            <element signature="e#2634#3036#0" expanded="false" />
-            <element signature="e#3111#3342#0" expanded="false" />
+            <element signature="e#1558#1749#0" expanded="false" />
+            <element signature="e#1824#1931#0" expanded="false" />
+            <element signature="e#1993#2286#0" expanded="false" />
+            <element signature="e#2343#2689#0" expanded="false" />
+            <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5938#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -374,12 +581,13 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#1432#1623#0" expanded="false" />
-            <element signature="e#1698#1805#0" expanded="false" />
-            <element signature="e#1867#2160#0" expanded="false" />
-            <element signature="e#2217#2563#0" expanded="false" />
-            <element signature="e#2634#3036#0" expanded="false" />
-            <element signature="e#3111#3342#0" expanded="false" />
+            <element signature="e#1558#1749#0" expanded="false" />
+            <element signature="e#1824#1931#0" expanded="false" />
+            <element signature="e#1993#2286#0" expanded="false" />
+            <element signature="e#2343#2689#0" expanded="false" />
+            <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5938#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -408,29 +616,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
+    <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state relative-caret-position="774">
+          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
           <folding>
-            <element signature="e#48#207#1" expanded="false" />
-            <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#1432#1623#0" expanded="false" />
-            <element signature="e#1698#1805#0" expanded="false" />
-            <element signature="e#1867#2160#0" expanded="false" />
-            <element signature="e#2217#2563#0" expanded="false" />
-            <element signature="e#2634#3036#0" expanded="false" />
-            <element signature="e#3111#3342#0" expanded="false" />
+            <element signature="e#50#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="54" column="45" lean-forward="false" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+        <state relative-caret-position="234">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
-            <element signature="e#50#59#0" expanded="true" />
+            <element signature="e#48#207#1" expanded="false" />
+            <element signature="e#209#228#0" expanded="true" />
+            <element signature="e#1558#1749#0" expanded="false" />
+            <element signature="e#1824#1931#0" expanded="false" />
+            <element signature="e#1993#2286#0" expanded="false" />
+            <element signature="e#2343#2689#0" expanded="false" />
+            <element signature="e#2760#3162#0" expanded="false" />
+            <element signature="e#3225#3456#0" expanded="false" />
+            <element signature="e#3645#5938#0" expanded="false" />
           </folding>
         </state>
       </provider>

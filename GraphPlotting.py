@@ -14,7 +14,7 @@ Updated Jan 25, 2018
 import pandas as pd
 import os
 from datetime import datetime
-from bokeh.plotting import figure, save, output_file
+from bokeh.plotting import figure, save, output_file, show
 from bokeh.palettes import Dark2_5 as palette
 from bokeh.models.formatters import DatetimeTickFormatter
 from bokeh.models.tools import HoverTool
@@ -33,8 +33,13 @@ def create_teh_dataframe(data_directory, subreddits=default_s, keywords=default_
     subreddit_dfs = []
 
     for sub in subreddits:
-        sub_df = pd.read_pickle(os.path.join(data_directory, sub + '.pkl'))
+        sub_df = pd.read_csv(os.path.join(data_directory, sub + '.csv'), index_col=False)
+
         sub_df = sub_df.reset_index(level=0, drop=True)
+
+        sub_df['date'] = pd.to_datetime(sub_df['date'])
+
+        sub_df.set_index('date', inplace=True)
 
         sub_keyword_dfs = []
         for keyword in keywords:
@@ -114,7 +119,7 @@ def remove_outliers_from_df(graphable_dfs, subreddits, q=0.99):
     return removed_outliers_list
 
 
-def smoothify(graphable_dataframes, subreddits, smoothing_rate=10):
+def smoothify(graphable_dataframes, smoothing_rate=10):
     smoothed_dfs = []
 
     for df in graphable_dataframes:
@@ -184,7 +189,7 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestar
         graphable_dataframes = find_difference(graphable_dataframes, subreddits)
 
     if smooth:
-        graphable_dataframes = smoothify(graphable_dataframes, subreddits, smooth)
+        graphable_dataframes = smoothify(graphable_dataframes, smooth)
 
     return graphable_dataframes
 
@@ -220,7 +225,7 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     hover.tooltips = tips
     hover.mode = 'mouse'
 
-    #show(p)
+    show(p)
     script, div = components(p)
     return script, div
 
