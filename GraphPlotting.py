@@ -145,10 +145,8 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestar
     - normalize: takes the counts for each dataframe and divides by the totals, then removes outliers (True/False)
     - difference: takes the counts for each dataframe of one subreddit minus the other (True/False) REQUIRES 2 DFs!
     - cumsum: takes the cumulative sum for each dataframe (True/False)
+    - smooth: smooth the graphs by removing terrible spikes over a given window size.
     - quantile: marks the quantile from which outliers above will be removed
-
-    :Future_params:
-    - smooth:
 
     """
 
@@ -189,7 +187,7 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestar
         graphable_dataframes = find_difference(graphable_dataframes, subreddits)
 
     if smooth:
-        graphable_dataframes = smoothify(graphable_dataframes, smooth)
+        graphable_dataframes = smoothify(graphable_dataframes)
 
     return graphable_dataframes
 
