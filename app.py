@@ -43,9 +43,16 @@ def frequencies_run():
         startdate = request.form.get('startdate')
         enddate = request.form.get('enddate')
 
-        print(subs2plot)
-        print(words2plot)
-        print(options2plot)
+        print('Subreddits to plot: '.format(subs2plot))
+        print('Keywords to plot: '.format(words2plot))
+        print('Additional options to plot: '.format(options2plot))
+
+        # in the case of errors or missing values...
+        if len(subs2plot) == 0:
+            subs2plot = ['the_donald', 'hillaryclinton']
+
+        if len(words2plot) == 0:
+            words2plot = ['trump', 'clinton']
 
         # Plotting the graph.
         data_directory = './data/by_subs_frequencies_100/'

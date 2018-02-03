@@ -26,6 +26,7 @@ default_s = ['the_donald', 'hillaryclinton']
 default_k = ['trump', 'clinton']
 
 def create_teh_dataframe(data_directory, subreddits=default_s, keywords=default_k):
+
     # the total is always the first list!
     keywords.insert(0, 'total')
 
@@ -41,10 +42,8 @@ def create_teh_dataframe(data_directory, subreddits=default_s, keywords=default_
 
         subreddit_dfs.append(sub_keyword_dfs)
 
-    # subreddit_dfs = [[agorism_school, agorism_trump], [antiwar_school, antiwar_trump]]
-
+    # zip apart the subreddits for easier plotting
     keyword_zips = list(zip(*subreddit_dfs))
-    # keyword_zips = [('agorism_school_df', 'antiwar_school_df'), ('agorism_trump_df', 'antiwar_trump_df')]
 
     master_dfs = []
     for keyword_zip in keyword_zips:
