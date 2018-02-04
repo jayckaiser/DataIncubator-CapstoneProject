@@ -40,8 +40,15 @@ def frequencies_run():
         words2plot = retrieve_keywords()
         options2plot = retrieve_options()
 
-        startdate = convert_datetimes(request.form.get('startdate'))
-        enddate = convert_datetimes(request.form.get('enddate'))
+        try:
+            startdate = convert_datetimes(request.form.get('startdate'))
+        except ValueError:
+            startdate = datetime(2011, 10, 1)
+
+        try:
+            enddate = convert_datetimes(request.form.get('enddate'))
+        except ValueError:
+            enddate = datetime(2017, 12, 30)
 
         print('Subreddits to plot: '.format(subs2plot))
         print('Keywords to plot: '.format(words2plot))
