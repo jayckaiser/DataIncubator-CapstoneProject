@@ -40,6 +40,18 @@ def frequencies_run():
         words2plot = retrieve_keywords()
         options2plot = retrieve_options()
 
+        # in the case of errors or missing values...
+        if len(subs2plot) == 0:
+            subs2plot = ['the_donald', 'hillaryclinton']
+
+        if len(words2plot) == 0:
+            words2plot = ['trump', 'clinton']
+
+        print('Subreddits to plot: '.format(' '.join(subs2plot)))
+        print('Keywords to plot: '.format(' '.join(words2plot)))
+        print('Additional options to plot: '.format(' '.join(options2plot)))
+
+        # Retrieve custom start and end dates.
         try:
             startdate = convert_datetimes(request.form.get('startdate'))
         except ValueError:
@@ -49,17 +61,6 @@ def frequencies_run():
             enddate = convert_datetimes(request.form.get('enddate'))
         except ValueError:
             enddate = datetime(2017, 12, 30)
-
-        print('Subreddits to plot: '.format(subs2plot))
-        print('Keywords to plot: '.format(words2plot))
-        print('Additional options to plot: '.format(options2plot))
-
-        # in the case of errors or missing values...
-        if len(subs2plot) == 0:
-            subs2plot = ['the_donald', 'hillaryclinton']
-
-        if len(words2plot) == 0:
-            words2plot = ['trump', 'clinton']
 
         # Plotting the graph.
         data_directory = './data/by_subs_frequencies_100/'

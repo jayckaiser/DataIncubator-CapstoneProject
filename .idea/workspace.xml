@@ -16,12 +16,11 @@
       <file leaf-file-name="GraphPlotting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
+            <state relative-caret-position="972">
               <caret line="133" column="181" lean-forward="false" selection-start-line="133" selection-start-column="181" selection-end-line="133" selection-end-column="181" />
               <folding>
                 <element signature="e#48#207#1" expanded="false" />
                 <element signature="e#209#228#0" expanded="true" />
-                <element signature="e#720#1509#0" expanded="false" />
                 <element signature="e#1558#1749#0" expanded="false" />
                 <element signature="e#1824#1931#0" expanded="false" />
                 <element signature="e#1993#2286#0" expanded="false" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+            <state relative-caret-position="334">
+              <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
               <folding>
                 <element signature="e#50#59#0" expanded="true" />
               </folding>
@@ -56,6 +55,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>on</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -69,11 +73,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="992" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="928" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -206,15 +210,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="992" y="24" width="928" height="1056" extended-state="4" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06740332" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.033296943" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32946378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3387271" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -247,7 +251,6 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#720#1509#0" expanded="false" />
             <element signature="e#1558#1749#0" expanded="false" />
             <element signature="e#1824#1931#0" expanded="false" />
             <element signature="e#1993#2286#0" expanded="false" />
@@ -277,7 +280,6 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#720#1509#0" expanded="false" />
             <element signature="e#1558#1749#0" expanded="false" />
             <element signature="e#1824#1931#0" expanded="false" />
             <element signature="e#1993#2286#0" expanded="false" />
@@ -324,7 +326,6 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#720#1509#0" expanded="false" />
             <element signature="e#1558#1749#0" expanded="false" />
             <element signature="e#1824#1931#0" expanded="false" />
             <element signature="e#1993#2286#0" expanded="false" />
@@ -361,7 +362,6 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#720#1509#0" expanded="false" />
             <element signature="e#1558#1749#0" expanded="false" />
             <element signature="e#1824#1931#0" expanded="false" />
             <element signature="e#1993#2286#0" expanded="false" />
@@ -388,7 +388,6 @@
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#720#1509#0" expanded="false" />
             <element signature="e#1558#1749#0" expanded="false" />
             <element signature="e#1824#1931#0" expanded="false" />
             <element signature="e#1993#2286#0" expanded="false" />
@@ -427,12 +426,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
+        <state relative-caret-position="972">
           <caret line="133" column="181" lean-forward="false" selection-start-line="133" selection-start-column="181" selection-end-line="133" selection-end-column="181" />
           <folding>
             <element signature="e#48#207#1" expanded="false" />
             <element signature="e#209#228#0" expanded="true" />
-            <element signature="e#720#1509#0" expanded="false" />
             <element signature="e#1558#1749#0" expanded="false" />
             <element signature="e#1824#1931#0" expanded="false" />
             <element signature="e#1993#2286#0" expanded="false" />
@@ -447,8 +445,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        <state relative-caret-position="334">
+          <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
           <folding>
             <element signature="e#50#59#0" expanded="true" />
           </folding>
