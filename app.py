@@ -10,7 +10,7 @@ Created 12/23/2017
 
 import os
 from flask import Flask, render_template, request
-from datetime import date
+from datetime import datetime
 import GraphPlotting
 
 app = Flask(__name__)
@@ -40,8 +40,8 @@ def frequencies_run():
         words2plot = retrieve_keywords()
         options2plot = retrieve_options()
 
-        startdate = request.form.get('startdate')
-        enddate = request.form.get('enddate')
+        startdate = convert_datetimes(request.form.get('startdate'))
+        enddate = convert_datetimes(request.form.get('enddate'))
 
         print('Subreddits to plot: '.format(subs2plot))
         print('Keywords to plot: '.format(words2plot))
@@ -73,10 +73,7 @@ def frequencies_run():
 
 @app.route('/rankings', methods=['GET', 'POST'])
 def networks_run():
-    if request.method == 'GET':
-        return render_template('UsersPlotting.html')
-    else:
-        return render_template('UsersPlotting.html')
+    return render_template('UsersPlotting.html')
 
 
 # Functions used above.
@@ -94,7 +91,7 @@ def retrieve_keywords():
 
 
 def convert_datetimes(datetime):
-    pass
+    return datetime.strptime(datetime, '%Y-%m-%d')
 
 
 if __name__ == "__main__":
