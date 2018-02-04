@@ -90,8 +90,8 @@ def retrieve_keywords():
     return request.values.getlist('keyword_select')
 
 
-def convert_datetimes(datetime):
-    return datetime.strptime(datetime, '%Y-%m-%d')
+def convert_datetimes(dt):
+    return datetime.strptime(dt, '%Y-%m-%d')
 
 
 if __name__ == "__main__":
