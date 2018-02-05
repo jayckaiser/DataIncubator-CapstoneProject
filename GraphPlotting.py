@@ -20,6 +20,7 @@ from bokeh.models.formatters import DatetimeTickFormatter
 from bokeh.models.tools import HoverTool
 from bokeh.models import ColumnDataSource, OpenURL, TapTool, CustomJS
 from bokeh.embed import components
+import itertools as it
 
 
 default_s = ['the_donald', 'hillaryclinton']
@@ -193,7 +194,7 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestar
 
 
 def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference=False):
-    colors = list(palette)
+    colors = it.cycle(palette)
 
     p = figure(plot_width=1700, plot_height=900, x_axis_type='datetime',
                tools="pan,wheel_zoom,box_zoom,reset,hover")
@@ -208,13 +209,13 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
 
             name = 'r/{} - r/{}: "{}"'.format(subreddits[0], subreddits[1], keywords[i + 1])
             p.line(x='date', y=subreddits[0], source=ColumnDataSource(df),
-                   legend=name, color=colors[i])
+                   legend=name, color=next(colors))
 
         else:
             for j, sub in enumerate(subreddits):
                 name = 'r/{}: "{}"'.format(subreddits[j], keywords[i + 1])
                 p.line(x='date', y=sub, source=ColumnDataSource(df),
-                       legend=name, color=colors[len(subreddits) * j + i])
+                       legend=name, color=next(colors))
 
     p.legend.location = "top_left"
     p.legend.click_policy = 'hide'
