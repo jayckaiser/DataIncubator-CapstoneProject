@@ -40,6 +40,12 @@ def frequencies_run():
         words2plot = retrieve_keywords()
         options2plot = retrieve_options()
 
+        if 'on' in subs2plot:
+            subs2plot.remove('on')
+
+        if 'on' in words2plot:
+            words2plot.remove('on')
+
         # in the case of errors or missing values...
         if len(subs2plot) == 0:
             subs2plot = ['the_donald', 'hillaryclinton']
