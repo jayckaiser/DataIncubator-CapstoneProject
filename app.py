@@ -80,12 +80,20 @@ def frequencies_run():
 
 
 @app.route('/rankings', methods=['GET', 'POST'])
-def networks_run():
+def rankings_run():
     return render_template('rankings.html')
 
 @app.route('/normalizedrankings', methods=['GET', 'POST'])
-def normalized_networks_run():
+def normalized_rankings_run():
     return render_template('normalizedrankings.html')
+
+@app.route('/counts', methods=['GET', 'POST'])
+def counts_run():
+    return render_template('counts.html')
+
+@app.route('/normalizedcounts', methods=['GET', 'POST'])
+def normalized_counts_run():
+    return render_template('normalizedcounts.html')
 
 
 # Functions used above.

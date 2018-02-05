@@ -24,7 +24,7 @@ from bokeh.models.tools import HoverTool
 from bokeh.models import ColumnDataSource, Legend
 
 
-def extract_dataframe(main_directory):
+def extract_dataframe(main_directory, normalize=True):
     datelist = []
     dictionary_dict = {}
     totals = []
@@ -39,12 +39,12 @@ def extract_dataframe(main_directory):
             dictionary_dict[date] = date_dict
             totals.append(total)
 
-    dictionary_df = pd.DataFrame(dictionary_dict)
-    #totals_df = pd.Series(totals_dict)
+    df = pd.DataFrame(dictionary_dict)
 
-    #dictionary_df['total'] = totals_df
+    if normalize:
+        df = df / totals
 
-    return (dictionary_df / totals)
+    return df
 
 
 def refine_df(df, threshold=0.03275):
@@ -102,10 +102,16 @@ def plot_teh_graphs_bokeh(df, per_row=40):
     #return script, div
 
 
-def create_dataframe(directory, relative=True):
-    df = extract_dataframe(directory)
+def create_dataframe(directory, normalize=True, relative=True):
 
-    df = refine_df(df)
+    df = extract_dataframe(directory, normalize=normalize)
+
+    if normalize:
+        df = refine_df(df)
+
+    else:
+        df = refine_df(df, threshold=3520)
+
     print(len(df))
 
     df = sort_df(df).T
@@ -120,7 +126,7 @@ def create_dataframe(directory, relative=True):
 if __name__ == "__main__":
     main_directory = './data/subreddit_counts/'
 
-    df = create_dataframe(main_directory, relative=False)
+    df = create_dataframe(main_directory, normalize=False, relative=False)
     #print(df)
 
     plot_teh_graphs_bokeh(df)

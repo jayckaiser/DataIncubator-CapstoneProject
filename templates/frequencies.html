@@ -13,16 +13,33 @@
     <link rel="stylesheet" type="text/css" href="./static", filename='style.css'">
   </head>
   <body>
+
+    <form id='entryinfo' method='post' action='counts'>
+      <p>
+    <input type='submit' value="See politics-to-subreddit raw counts..."/>
+       </p>
+    </form>
+
+    <form id='entryinfo' method='post' action='normalizedcounts'>
+      <p>
+    <input type='submit' value="See politics-to-subreddit raw counts by normalized ranking..."/>
+       </p>
+    </form>
+
     <form id='entryinfo' method='post' action='rankings'>
       <p>
   <input type='submit' value="See politics-to-subreddit frequency graph..."/>
        </p>
     </form>
+
     <form id='entryinfo' method='post' action='normalizedrankings'>
       <p>
   <input type='submit' value="See a politics-to-subreddit frequency graph by normalized ranking..."/>
        </p>
     </form>
+
+
+
     <div class="metanav">
       <h3>Select any number of subreddits and keywords and see how their frequencies change over time!</h3>
       <h4>(If left blank, they'll default to r/The_Donald and r/hillaryclinton, and 'trump' and 'clinton'.) </h4>
