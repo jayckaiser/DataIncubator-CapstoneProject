@@ -120,7 +120,7 @@ def create_dataframe(directory, relative=True):
 if __name__ == "__main__":
     main_directory = './data/subreddit_counts/'
 
-    df = create_dataframe(main_directory, relative=True)
+    df = create_dataframe(main_directory, relative=False)
     #print(df)
 
     plot_teh_graphs_bokeh(df)

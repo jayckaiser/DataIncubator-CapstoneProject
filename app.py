@@ -87,7 +87,11 @@ def frequencies_run():
 
 @app.route('/rankings', methods=['GET', 'POST'])
 def networks_run():
-    return render_template('UsersPlotting.html')
+    return render_template('rankings.html')
+
+@app.route('/normalizedrankings', methods=['GET', 'POST'])
+def normalized_networks_run():
+    return render_template('normalizedrankings.html')
 
 
 # Functions used above.
