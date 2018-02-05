@@ -195,7 +195,7 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestar
 def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference=False):
     colors = list(palette)
 
-    p = figure(plot_width=800, plot_height=800, x_axis_type='datetime', tools="pan,wheel_zoom,box_zoom,reset,hover")
+    p = figure(plot_width=1700, plot_height=900, x_axis_type='datetime', tools="pan,wheel_zoom,box_zoom,reset,hover")
 
     for i, df in enumerate(graphable_dataframes):
 

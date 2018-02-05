@@ -97,11 +97,11 @@ def retrieve_options():
 
 
 def retrieve_subreddits():
-    return request.values.getlist('sub_select')
+    return request.args.getlist('sub_select')
 
 
 def retrieve_keywords():
-    return request.values.getlist('keyword_select')
+    return request.args.getlist('keyword_select')
 
 
 def convert_datetimes(dt):
