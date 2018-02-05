@@ -21,7 +21,7 @@ from bokeh.plotting import figure, show
 from bokeh.palettes import Dark2_5 as palette
 from bokeh.models.formatters import DatetimeTickFormatter
 from bokeh.models.tools import HoverTool
-from bokeh.models import ColumnDataSource, Legend
+from bokeh.models import ColumnDataSource, Legend, FuncTickFormatter
 
 
 def extract_dataframe(main_directory, normalize=True):
@@ -63,7 +63,7 @@ def rank_df(df):
     return df.T.rank(ascending=False).T
 
 
-def plot_teh_graphs_bokeh(df, per_row=40):
+def plot_teh_graphs_bokeh(df, per_row=40, rankings=False):
 
     colors = iter(it.cycle(palette))
 
@@ -92,10 +92,17 @@ def plot_teh_graphs_bokeh(df, per_row=40):
                         click_policy='mute', inactive_fill_alpha=0.6)
         p.add_layout(legend, 'right')
 
-    p.yaxis.visible = False
-    p.ygrid.visible = False
+    label_dict = {i: -i for i in range(160)}
+
+    #p.yaxis.visible = False
+    #p.ygrid.visible = False
+
     p.legend.border_line_alpha = 0.0
     p.legend.background_fill_alpha = 0.1
+
+    p.title.text = 'Top 160 Most Similar Subreddits to r/politics (by Shared-Poster Frequency Rankings)'
+    p.yaxis.axis_label = 'Frequency Rankings'
+    p.xaxis.axis_label = 'Date'
 
     show(p)
     #script, div = components(p)
@@ -126,9 +133,12 @@ def create_dataframe(directory, normalize=True, relative=True):
 if __name__ == "__main__":
     main_directory = './data/subreddit_counts/'
 
-    df = create_dataframe(main_directory, normalize=False, relative=False)
+    normalize=True
+    rankings = True
+
+    df = create_dataframe(main_directory, normalize=normalize, relative=rankings)
     #print(df)
 
-    plot_teh_graphs_bokeh(df)
+    plot_teh_graphs_bokeh(df, rankings=rankings)
 
     #print(refined_df.info)
