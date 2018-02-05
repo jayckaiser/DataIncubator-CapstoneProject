@@ -18,7 +18,7 @@ from bokeh.plotting import figure, save, output_file, show
 from bokeh.palettes import Dark2_5 as palette
 from bokeh.models.formatters import DatetimeTickFormatter
 from bokeh.models.tools import HoverTool
-from bokeh.models import ColumnDataSource
+from bokeh.models import ColumnDataSource, OpenURL, TapTool, CustomJS
 from bokeh.embed import components
 
 
@@ -195,7 +195,8 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestar
 def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference=False):
     colors = list(palette)
 
-    p = figure(plot_width=1700, plot_height=900, x_axis_type='datetime', tools="pan,wheel_zoom,box_zoom,reset,hover")
+    p = figure(plot_width=1700, plot_height=900, x_axis_type='datetime',
+               tools="pan,wheel_zoom,box_zoom,reset,hover")
 
     for i, df in enumerate(graphable_dataframes):
 
@@ -222,6 +223,8 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     tips = [('when', '@viewable_dates')]
     hover.tooltips = tips
     hover.mode = 'mouse'
+
+
 
     show(p)
     script, div = components(p)
