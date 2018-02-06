@@ -21,6 +21,16 @@ def to_main_page():
     return render_template('index.html')
 
 
+@app.route('/index', methods=['GET', 'POST'])
+def index_run():
+    """
+    Runs the actual server as necessary.
+
+    :return:
+    """
+    return render_template('index.html')
+
+
 @app.route('/frequencies', methods=['GET', 'POST'])
 def frequencies_run():
     """
