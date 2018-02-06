@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jay Kaiser - A Study of Reddit Politics</title>
+<!--
+
+Template 2096 Individual
+
+http://www.tooplate.com/view/2096-individual
+
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+<link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+<link rel="stylesheet" href="../static/bootstrap.min.css">
+<link rel="stylesheet" type="../text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="../text/css" href="slick/slick-theme.css"/>
+<link rel="stylesheet" href="../static/tooplate-style.css"><!-- tooplate style -->
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="../static/magnific-popup.css">
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
+
+      <body>
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="../static/bg-img-05.jpg">
+
+      <form id='entryinfo' method='post' action='index.html'>
+        <input class="btn btn-danger tm-btn-right" type='submit' value="Return..."/>
+      </form>
+
+          <section class="container tm-page-1-content">
+              <article class="col-md-6 tm-article tm-bg-white-transparent">
+                <header><h1>Measuring Interconnectedness of Subreddits Over Time</h1></header>
+                <p>
+                  I've made several assumptions in the creation of this project.
+                </p>
+                <p>
+                The first is perhaps the easiest to accept: we can judge the popularity of a subreddit not by its total follower count or its comment count, but instead by the total number of its unique users. This makes sense, practically. A single user can post 100 times, but if he is the only one in his community's discourse, the effect of the poster on others will be mostly null. Conversely, even if subreddits are viewed by many people, if very few of them leave comments in the discussion, the effect of the subreddit only portrays passive following. Though there are many users of Reddit who never post (affectionately known as 'Lurkers'), a large percentage of users post frequently, and it is through shared postings that real discussion is had, either in forwarding or dissuading the views of other Redditors. It is for this reason that popularity of subreddits here is measured by numbers of unique posters, as opposed to some other metric.
+                </p>
+                <p>
+                The second assumption made is that r/politics should be the neutral baseline political subreddit to focus on for this project. r/politics is the aptly-named subreddit devoted to American politics and political discussion; additionally, it is a default subreddit, which means that all new users of Reddit by default receive occasional posts from r/politics until they choose to opt out of such. Therefore, the influence of r/politics has a strong impact on the entire userbase as a whole, and anyone who has an opinion of American politics is free and encouraged to post in the r/politics subreddit.
+                </p>
+                <p>
+                Finally, for this project I have assumed that if two subreddits share a large number of posters, those communities can be said to be frequented by people of similar ideologies. For example, pretend that I myself frequently post in the subreddit dedicated to handbells (r/handbells). Additionally, I, like all handbell players, am very politically inclined, and I post in r/politics as well. If enough of us daring handbell players post in r/politics, we can be said to be an influential subreddit, or a subreddit that has a high count of shared users with r/politics.
+                </p>
+              </article>
+
+          </section>
+        </div>
+
+        <div id="tm-section-2" class="parallax-window" data-parallax="scroll" data-image-src="../static/bg-img-06.jpg">
+          <section class="container tm-page-1-content">
+              <div class="col-md-6 tm-article tm-bg-white-transparent">
+
+                <p>
+                  The following graphs show the change in numbers of shared users between r/politics and other subreddits over time, normalized by different factors and frequencies. From these, we can visualize the importance of each subreddit and how its users change in political taste over time.
+                </p>
+
+              </div>
+
+              <p>
+                <form id='entryinfo' method='post' action='counts.html'>
+                  <input class="btn btn-danger tm-btn-left" type='submit' value="Raw Poster Count"/>
+                </form>
+                <form id='entryinfo' method='post' action='normalizedcounts.html'>
+                  <input class="btn btn-danger tm-btn-right" type='submit' value="Raw Poster Count w/ Ranking Normalization"/>
+                </form>
+                </p>
+                
+                <p>
+                  <form id='entryinfo' method='post' action='rankings.html'>
+                  <input class="btn btn-danger tm-btn-left" type='submit' value="Poster Frequencies"/>
+                </form>
+                <form id='entryinfo' method='post' action='normalizedrankings.html'>
+                  <input class="btn btn-danger tm-btn-right" type='submit' value="Poster Frequencies w/ Ranking Normalization"/>
+                </form>
+                </p>
+
+          </section>
+        </div>
+
+          <!-- load JS files -->
+          <script src="../static/jquery-1.11.3.min.js"></script>        <!-- jQuery (https://jquery.com/download/) -->
+          <script src="../static/parallax.min.js"></script>
+
+          <script type="../text/javascript" src="slick/slick.min.js"></script>
+          <!-- Slick Carousel -->
+
+          <!-- Magnific Popup core JS file -->
+          <script src="../static/jquery.magnific-popup.min.js"></script>
+
+
+          <script>
+
+            function setCarousel() {
+
+              var slider = $('.tm-img-slider');
+
+              if (slider.hasClass('slick-initialized')) {
+                slider.slick('destroy');
+              }
+
+              if($(window).width() > 991){
+                  // Slick carousel
+                  slider.slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                  });
+                }
+                else {
+                 slider.slick({
+                  dots: true,
+                  infinite: true,
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                });
+               }
+             }
+
+             $(document).ready(function(){
+
+              setCarousel();
+              $('.tm-img-slider').magnificPopup({
+                delegate: 'a', // child items selector, by clicking on it popup will open
+                type: 'image'
+                // other options
+
+              });
+
+              $(window).resize(function() {
+                setCarousel();
+              });
+            });
+
+          </script>
+        </body>
+        </html>

@@ -1,58 +1,95 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The Data Incubator Capstone project by Jay Kaiser.">
-    <meta name="author" content="@gotoariel">
-    <!-- <link rel="icon" href="favicon.ico"> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jay Kaiser - Reddit Politics</title>
+  <title>Jay Kaiser - A Study of Reddit Politics</title>
+<!--
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="./static", filename='style.css'">
-  </head>
-  <body>
+Template 2096 Individual
 
-    <form id='entryinfo' method='post' action='counts'>
-      <p>
-    <input type='submit' value="See politics-to-subreddit raw counts..."/>
-       </p>
-    </form>
+http://www.tooplate.com/view/2096-individual
 
-    <form id='entryinfo' method='post' action='normalizedcounts'>
-      <p>
-    <input type='submit' value="See politics-to-subreddit raw counts by normalized ranking..."/>
-       </p>
-    </form>
-
-    <form id='entryinfo' method='post' action='rankings'>
-      <p>
-  <input type='submit' value="See politics-to-subreddit frequency graph..."/>
-       </p>
-    </form>
-
-    <form id='entryinfo' method='post' action='normalizedrankings'>
-      <p>
-  <input type='submit' value="See a politics-to-subreddit frequency graph by normalized ranking..."/>
-       </p>
-    </form>
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+<link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+<link rel="stylesheet" href="../static/bootstrap.min.css">
+<link rel="stylesheet" type="../text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="../text/css" href="slick/slick-theme.css"/>
+<link rel="stylesheet" href="../static/tooplate-style.css"><!-- tooplate style -->
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="../static/magnific-popup.css">
 
 
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
 
-    <div class="metanav">
-      <h3>Select any number of subreddits and keywords and see how their frequencies change over time!</h3>
-      <h4>(If left blank, they'll default to r/The_Donald and r/hillaryclinton, and 'trump' and 'clinton'.) </h4>
+      <body>
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="../static/bg-img-07.jpg">
+
+      <form id='entryinfo' method='post' action='index.html'>
+        <input class="btn btn-danger tm-btn-right" type='submit' value="Return..."/>
+      </form>
+
+          <section class="container tm-page-1-content">
+              <article class="col-md-6 tm-article tm-bg-white-transparent">
+                <header><h1>Measuring Term-Frequencies across Subreddits Over Time</h1></header>
+                <p>
+                Ranking graphs can be beneficial to see how much of an impact each subreddit has on r/politics over time, but it doesn't provide as much insight about when and where important events and ideas were trending in communities, or how important something is to one subreddit over another.
+                </p>
+                <p>
+                Using term frequency-inverse document frequency, a measure of word-importance across a corpus of text, I extracted the most important words found in r/politics over the past decade or so. From the entirety of the Reddit corpus, amounting to about 850 GB of refined comment data, I extracted subreddit-frequency counts for each of these keywords, where each frequency measures the number of comments from that subreddit that contains that keyword.
+                </p>
+               
+              </article>
+
+          </section>
+        </div>
+
+        <div id="tm-section-2" class="parallax-window" data-parallax="scroll" data-image-src="../static/bg-img-08.jpg">
+          <section class="container tm-page-1-content">
+              <div class="col-md-6 tm-article tm-bg-white-transparent">
+
+                <p>
+                  Below, you can choose from a selection of politically-aligned subreddits (as linked to in r/politics), as well from the automatically-retrieved keywords described above.
+                  </p>
+                <p>
+                These graphs are built day-by-day, so they can be very spiky and hard to visualize. Smooth the graphs to make them more viewable, at the loss of measuring extreme spikes.
+                </p>
+                <p>
+                Because the number of commenters in subreddits vary drastically, it may be best to normalize the number of comments containing each keyword. Normalization divides the frequency count by the total number of comments in that subreddit, giving the percentage of comments over time that contain each keyword. However, given the fact that some subreddits may have only a single comment on a given day and that that comment may contain a keyword, there are instances where 100 percent of comments are relevant. This drastically skews normalized graphs, so there is an option to remove these outliers from the graphing.
+                </p>
+                <p>
+                If wanted, one can also measure the cumulative sum of these keyword-frequencies over time. The usefulness of this is currently unknown, but it was easy to implement so knock yourself out.
+                </p>
+                <p>
+                Finally, one can set custom start and enddates for the graph, if desired. Simply type in the date wanted in a YYYY-MM-DD format, and only datapoints between those spans will be plotted.
+                </p>
+
+                <p>
+                  (Note that if left blank, the graph will default to r/The_Donald and r/hillaryclinton across 'trump' and 'clinton.')
+
+              
+
+
 <form id='entryinfo' method='post' action='frequencies'>
 <div class="multiselect">
           <div class="selectBox" onclick="showCheckboxes()">
             <select>
-              <option>Choose some subreddits!</option>
+              <option>Choose subreddits!</option>
             </select>
             <div class="overSelect"></div>
           </div>
 <div id="checkboxes">
-<input type="checkbox" name="sub_select" value="politics" />r/politics<br>
+<input type="checkbox" name="sub_select" value="politics" />r/politics<br><br>
 <h4>2016 Presidential Candidates</h4>
 <p>Republicans</p>
 <input type="checkbox" name="sub_select" value="bencarson" />r/bencarson<br>
@@ -65,22 +102,22 @@
 <input type="checkbox" name="sub_select" value="marco_rubio" />r/marco_rubio<br>
 <input type="checkbox" name="sub_select" value="ricksantorum" />r/ricksantorum<br>
 <input type="checkbox" name="sub_select" value="asktrumpsupporters" />r/asktrumpsupporters<br>
-<input type="checkbox" name="sub_select" value="the_donald" />r/the_donald<br>
+<input type="checkbox" name="sub_select" value="the_donald" />r/the_donald<br><br>
 <p>Democrats</p>
 <input type="checkbox" name="sub_select" value="hillaryclinton" />r/hillaryclinton<br>
 <input type="checkbox" name="sub_select" value="hillaryforamerica" />r/hillaryforamerica<br>
 <input type="checkbox" name="sub_select" value="martinomalley" />r/martinomalley<br>
-<input type="checkbox" name="sub_select" value="sandersforpresident" />r/sandersforpresident<br>
+<input type="checkbox" name="sub_select" value="sandersforpresident" />r/sandersforpresident<br><br>
 <p>Third Party and Independents</p>
 <input type="checkbox" name="sub_select" value="garyjohnson" />r/garyjohnson<br>
 <input type="checkbox" name="sub_select" value="jillstein" />r/jillstein<br>
-<input type="checkbox" name="sub_select" value="mcmullin" />r/mcmullin<br>
+<input type="checkbox" name="sub_select" value="mcmullin" />r/mcmullin<br><br>
 <h4>Partisan Subreddits</h4>
 <p>In the center</p>
 <input type="checkbox" name="sub_select" value="neutralpolitics" />r/neutralpolitics<br>
 <input type="checkbox" name="sub_select" value="centrist" />r/centrist<br>
 <input type="checkbox" name="sub_select" value="moderatepolitics" />r/moderatepolitics<br>
-<input type="checkbox" name="sub_select" value="peoplesparty" />r/peoplesparty<br>
+<input type="checkbox" name="sub_select" value="peoplesparty" />r/peoplesparty<br><br>
 <p>On the left</p>
 <input type="checkbox" name="sub_select" value="alltheleft" />r/alltheleft<br>
 <input type="checkbox" name="sub_select" value="classical_liberals" />r/classical_liberals<br>
@@ -96,7 +133,7 @@
 <input type="checkbox" name="sub_select" value="obama" />r/obama<br>
 <input type="checkbox" name="sub_select" value="progressive" />r/progressive<br>
 <input type="checkbox" name="sub_select" value="socialdemocracy" />r/socialdemocracy<br>
-<input type="checkbox" name="sub_select" value="socialism" />r/socialism<br>
+<input type="checkbox" name="sub_select" value="socialism" />r/socialism<br><br>
 <p>On the right</p>
 <input type="checkbox" name="sub_select" value="conservative" />r/conservative<br>
 <input type="checkbox" name="sub_select" value="conservatives" />r/conservatives<br>
@@ -107,7 +144,7 @@
 <input type="checkbox" name="sub_select" value="republican" />r/republican<br>
 <input type="checkbox" name="sub_select" value="republicans" />r/republicans<br>
 <input type="checkbox" name="sub_select" value="romney" />r/romney<br>
-<input type="checkbox" name="sub_select" value="trueobjectivism" />r/trueobjectivism<br>
+<input type="checkbox" name="sub_select" value="trueobjectivism" />r/trueobjectivism<br><br>
 <p>Libertarian</p>
 <input type="checkbox" name="sub_select" value="agorism" />r/agorism<br>
 <input type="checkbox" name="sub_select" value="anarcho_capitalism" />r/anarcho_capitalism<br>
@@ -122,12 +159,12 @@
 <input type="checkbox" name="sub_select" value="paul" />r/paul<br>
 <input type="checkbox" name="sub_select" value="ronpaul" />r/ronpaul<br>
 <input type="checkbox" name="sub_select" value="truelibertarian" />r/truelibertarian<br>
-<input type="checkbox" name="sub_select" value="voluntarism" />r/voluntarism<br>
+<input type="checkbox" name="sub_select" value="voluntarism" />r/voluntarism<br><br>
 <p>Communism</p>
 <input type="checkbox" name="sub_select" value="communism" />r/communism<br>
 <input type="checkbox" name="sub_select" value="debateacommunist" />r/debateacommunist<br>
 <input type="checkbox" name="sub_select" value="debatecommunism" />r/debatecommunism<br>
-<input type="checkbox" name="sub_select" value="leftcommunism" />r/leftcommunism<br>
+<input type="checkbox" name="sub_select" value="leftcommunism" />r/leftcommunism<br><br>
 <p>Anarchism</p>
 <input type="checkbox" name="sub_select" value="anarchism" />r/anarchism<br>
 <input type="checkbox" name="sub_select" value="anarchistnews" />r/anarchistnews<br>
@@ -135,11 +172,11 @@
 <input type="checkbox" name="sub_select" value="crimethinccollective" />r/crimethinccollective<br>
 <input type="checkbox" name="sub_select" value="green_anarchism" />r/green_anarchism<br>
 <input type="checkbox" name="sub_select" value="libertariansocialism" />r/libertariansocialism<br>
-<input type="checkbox" name="sub_select" value="libertarianleft" />r/libertarianleft<br>
+<input type="checkbox" name="sub_select" value="libertarianleft" />r/libertarianleft<br><br>
 <p>Other Political Parties</p>
 <input type="checkbox" name="sub_select" value="futuristparty" />r/futuristparty<br>
 <input type="checkbox" name="sub_select" value="pirateparty" />r/pirateparty<br>
-<input type="checkbox" name="sub_select" value="bullmooseparty" />r/bullmooseparty<br>
+<input type="checkbox" name="sub_select" value="bullmooseparty" />r/bullmooseparty<br><br>
 <h4>Political Issues and Causes</h4>
 <input type="checkbox" name="sub_select" value="acta" />r/acta<br>
 <input type="checkbox" name="sub_select" value="antiwar" />r/antiwar<br>
@@ -177,7 +214,7 @@
 <input type="checkbox" name="sub_select" value="socialdemocracy" />r/socialdemocracy<br>
 <input type="checkbox" name="sub_select" value="sopa" />r/sopa<br>
 <input type="checkbox" name="sub_select" value="supportthetpp" />r/supportthetpp<br>
-<input type="checkbox" name="sub_select" value="wikileaks" />r/wikileaks<br>
+<input type="checkbox" name="sub_select" value="wikileaks" />r/wikileaks<br><br>
 <h4>Election Themed</h4>
 <input type="checkbox" name="sub_select" value="2012elections" />r/2012elections<br>
 <input type="checkbox" name="sub_select" value="2016_elections" />r/2016_elections<br>
@@ -189,14 +226,14 @@
 <input type="checkbox" name="sub_select" value="forecast2016" />r/forecast2016<br>
 <input type="checkbox" name="sub_select" value="peoplesparty" />r/peoplesparty<br>
 <input type="checkbox" name="sub_select" value="runforit" />r/runforit<br>
-<input type="checkbox" name="sub_select" value="voting" />r/voting<br>
+<input type="checkbox" name="sub_select" value="voting" />r/voting<br><br>
 <h4>State Specific</h4>
 <input type="checkbox" name="sub_select" value="flgovernment" />r/flgovernment<br>
 <input type="checkbox" name="sub_select" value="illinoispolitics" />r/illinoispolitics<br>
 <input type="checkbox" name="sub_select" value="masspolitics" />r/masspolitics<br>
 <input type="checkbox" name="sub_select" value="missouripolitics" />r/missouripolitics<br>
 <input type="checkbox" name="sub_select" value="utahpolitics" />r/utahpolitics<br>
-<input type="checkbox" name="sub_select" value="virginiapolitics" />r/virginiapolitics<br>
+<input type="checkbox" name="sub_select" value="virginiapolitics" />r/virginiapolitics<br><br>
 <h4>General Interest</h4>
 <input type="checkbox" name="sub_select" value="americangovernment" />r/americangovernment<br>
 <input type="checkbox" name="sub_select" value="americanpolitics" />r/americanpolitics<br>
@@ -241,7 +278,7 @@
 <input type="checkbox" name="sub_select" value="watchingcongress" />r/watchingcongress<br>
 <input type="checkbox" name="sub_select" value="wealth" />r/wealth<br>
 <input type="checkbox" name="sub_select" value="worldunity" />r/worldunity<br>
-<input type="checkbox" name="sub_select" value="yro" />r/yro<br>
+<input type="checkbox" name="sub_select" value="yro" />r/yro<br><br>
 <h4>Reddit Activist Network</h4>
 <input type="checkbox" name="sub_select" value="alloccupy" />r/alloccupy<br>
 <input type="checkbox" name="sub_select" value="acta" />r/acta<br>
@@ -279,7 +316,7 @@
 <input type="checkbox" name="sub_select" value="thewarondrugs" />r/thewarondrugs<br>
 <input type="checkbox" name="sub_select" value="timetolegalize" />r/timetolegalize<br>
 <input type="checkbox" name="sub_select" value="troubledteens" />r/troubledteens<br>
-<input type="checkbox" name="sub_select" value="union" />r/union<br>
+<input type="checkbox" name="sub_select" value="union" />r/union<br><br>
 <h4>Economics</h4>
 <input type="checkbox" name="sub_select" value="austrian_economics" />r/austrian_economics<br>
 <input type="checkbox" name="sub_select" value="business" />r/business<br>
@@ -291,7 +328,7 @@
         <div class="multiselect">
           <div class="selectBox" onclick="showCheckboxes2()">
             <select>
-              <option>Choose some keywords!</option>
+              <option>Choose keywords!</option>
             </select>
             <div class="overSelect"></div>
           </div>
@@ -620,30 +657,134 @@
 <input type="checkbox" name="keyword_select" value="zimmerman" />zimmerman<br>
 </div>
 </div>
+<br>
+
   <h4>Here are some other options to ensure maximum graphability. </h4>
-	 <input type="text" name="startdate" placeholder="2011-11-01"> Custom startdate?<br>
-	 <input type="text" name="enddate" placeholder="2017-11-30"> Custom enddate?<br>
+   <input type="text" name="startdate" placeholder="2011-11-01"> Custom startdate?<br>
+   <input type="text" name="enddate" placeholder="2017-11-30"> Custom enddate?<br>
         <p/>
    <input type="checkbox" name="option" value="smooth"> Smooth the graphs?<br>
         <p/>
    <input type="checkbox" name="option" value="normalize"> Normalize by total count?<br>
    <input type="checkbox" name="option" value="quantile"> Remove outliers?<br>
         <p/>
-	 <input type="checkbox" name="option" value="difference"> Difference between TWO subreddits?<br>
+   <input type="checkbox" name="option" value="difference"> Difference between TWO subreddits?<br>
         <p/>
    <input type="checkbox" name="option" value="cumsum"> Total cumulative sum?<br>
-	   <p>
-	   <input type='submit' value="Let's get graphing!"/>
-	   </p>
-	</form>
-    </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </body>
-  <style>
+     <p>
+     <input type='submit' value="Let's get graphing!"/>
+     </p>
+  </form>
+
+  </div>
+              
+
+          </section>
+        </div>
+
+
+
+          <!-- load JS files -->
+          <script src="../static/jquery-1.11.3.min.js"></script>        <!-- jQuery (https://jquery.com/download/) -->
+          <script src="../static/parallax.min.js"></script>
+
+          <script type="../text/javascript" src="slick/slick.min.js"></script>
+          <!-- Slick Carousel -->
+
+          <!-- Magnific Popup core JS file -->
+          <script src="../static/jquery.magnific-popup.min.js"></script>
+
+
+          <script>
+
+            function setCarousel() {
+
+              var slider = $('.tm-img-slider');
+
+              if (slider.hasClass('slick-initialized')) {
+                slider.slick('destroy');
+              }
+
+              if($(window).width() > 991){
+                  // Slick carousel
+                  slider.slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                  });
+                }
+                else {
+                 slider.slick({
+                  dots: true,
+                  infinite: true,
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                });
+               }
+             }
+
+             $(document).ready(function(){
+
+              setCarousel();
+              $('.tm-img-slider').magnificPopup({
+                delegate: 'a', // child items selector, by clicking on it popup will open
+                type: 'image'
+                // other options
+
+              });
+
+              $(window).resize(function() {
+                setCarousel();
+              });
+            });
+
+             /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+var expanded1 = false;
+function showCheckboxes(c) {
+var checkboxes = document.getElementById("checkboxes");
+if (!expanded1) {
+  checkboxes.style.display = "block";
+  expanded1 = true;
+} else {
+  checkboxes.style.display = "none";
+  expanded1 = false;
+}
+}
+var expanded2 = false;
+function showCheckboxes2() {
+var checkboxes = document.getElementById("checkboxes2");
+if (!expanded2) {
+  checkboxes.style.display = "block";
+  expanded2 = true;
+} else {
+  checkboxes.style.display = "none";
+  expanded2 = false;
+}
+}
+
+          </script>
+
+
+<style>
   .dropbtn {
       background-color: #4CAF50;
       color: white;
@@ -688,7 +829,7 @@
   .dropdown a:hover {background-color: #ddd}
   .show {display:block;}
   .multiselect {
-  width: 200px;
+  width: 300px;
 }
 .selectBox {
   position: relative;
@@ -725,47 +866,7 @@
   background-color: #1e90ff;
 }
   </style>
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-function filterFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    div = document.getElementById("myDropdown");
-    a = div.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-        } else {
-            a[i].style.display = "none";
-        }
-    }
-}
-var expanded1 = false;
-function showCheckboxes(c) {
-var checkboxes = document.getElementById("checkboxes");
-if (!expanded1) {
-  checkboxes.style.display = "block";
-  expanded1 = true;
-} else {
-  checkboxes.style.display = "none";
-  expanded1 = false;
-}
-}
-var expanded2 = false;
-function showCheckboxes2() {
-var checkboxes = document.getElementById("checkboxes2");
-if (!expanded2) {
-  checkboxes.style.display = "block";
-  expanded2 = true;
-} else {
-  checkboxes.style.display = "none";
-  expanded2 = false;
-}
-}
-  </script>
-</html>
+
+
+        </body>
+        </html>
