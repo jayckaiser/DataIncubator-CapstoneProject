@@ -18,7 +18,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def to_main_page():
-    return render_template('frequencies.html')
+    return render_template('index.html')
 
 
 @app.route('/frequencies', methods=['GET', 'POST'])
