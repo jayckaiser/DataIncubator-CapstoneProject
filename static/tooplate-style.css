@@ -9,7 +9,7 @@ http://www.tooplate.com/view/2096-individual
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 500;
 	overflow-x: hidden;
 }
 
@@ -94,10 +94,11 @@ h5 {
 .tm-bg-white-transparent {
 	margin: 5px;
 	padding: 40px;
-	background-color: #ffffffc4;
+	background-color: white;
 	max-width: 1000px;
 	width: 100%;
 	margin: 20px;
+	opacity: 0.95;
 }
 
 .tm-bg-white-transparent-page3 {
@@ -134,18 +135,18 @@ h5 {
 .tm-bg-white-transparent-left {
 	float: right;
 	background-color: white;
-	opacity: 0.9;
+	opacity: 0.95;
 
 }
 .tm-bg-white-transparent-center {
 	display: inline-block;
 	background-color: white;
-	opacity: 0.9;
+	opacity: 0.95;
 }
 .tm-bg-white-transparent-right {
 	float: left;
 	background-color: white;
-	opacity: 0.9;
+	opacity: 0.95;
 }
 
 .tm-img-container {
@@ -211,7 +212,7 @@ h5 {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	color: white;
+	color: #ffffffc4;
 	text-align:center;
 	width:100%;
 }
