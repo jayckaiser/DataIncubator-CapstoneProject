@@ -209,16 +209,18 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
 
             name = 'r/{} - r/{}: "{}"'.format(subreddits[0], subreddits[1], keywords[i + 1])
             p.line(x='date', y=subreddits[0], source=ColumnDataSource(df),
-                   legend=name, color=next(colors))
+                   legend=name, color=next(colors), line_width=5)
 
         else:
             for j, sub in enumerate(subreddits):
                 name = 'r/{}: "{}"'.format(subreddits[j], keywords[i + 1])
                 p.line(x='date', y=sub, source=ColumnDataSource(df),
-                       legend=name, color=next(colors))
+                       legend=name, color=next(colors), line_width=5)
 
     p.legend.location = "top_left"
     p.legend.click_policy = 'hide'
+    p.legend.label_text_font_size = "18pt"
+
 
     hover = p.select(dict(type=HoverTool))
     tips = [('when', '@viewable_dates')]

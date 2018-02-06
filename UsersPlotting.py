@@ -77,8 +77,9 @@ def plot_teh_graphs_bokeh(df, per_row=40, rankings=False):
         color = next(colors)
         sub_colors[subreddit] = color
 
-        lines[subreddit] = p.line(df.index.values, df[subreddit], alpha=0.1, muted_alpha=1.0,
-                                  muted_color=color
+        lines[subreddit] = p.line(df.index.values, df[subreddit], alpha=0.02, muted_alpha=1.0,
+                                  muted_color=color,
+                                  line_width=5,
                                   #legend=subreddit
                                   )
 
@@ -100,8 +101,8 @@ def plot_teh_graphs_bokeh(df, per_row=40, rankings=False):
     p.legend.border_line_alpha = 0.0
     p.legend.background_fill_alpha = 0.1
 
-    p.title.text = 'Top 160 Most Similar Subreddits to r/politics (by Shared-Poster Frequency Rankings)'
-    p.yaxis.axis_label = 'Frequency Rankings'
+    p.title.text = 'Top 160 Most Similar Subreddits to r/politics (by Shared-Poster Frequencies)'
+    p.yaxis.axis_label = 'Frequencies'
     p.xaxis.axis_label = 'Date'
 
     show(p)
@@ -134,7 +135,7 @@ if __name__ == "__main__":
     main_directory = './data/subreddit_counts/'
 
     normalize=True
-    rankings = True
+    rankings = False
 
     df = create_dataframe(main_directory, normalize=normalize, relative=rankings)
     #print(df)
