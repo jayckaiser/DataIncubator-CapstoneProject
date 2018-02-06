@@ -56,14 +56,14 @@ a:focus {
 .tm-bg-white {
 	padding: 20px;
 	background-color: white;
-	opacity: 0.8;
+	opacity: 0.9;
 	width: 100%;
 }
 
 .tm-bg-white2 {
 		padding: 20px;
 		background-color: white;
-		opacity: 0.8;
+		opacity: 0.9;
 		width: 100%;
 		margin: 0px;
 }
@@ -134,18 +134,18 @@ h5 {
 .tm-bg-white-transparent-left {
 	float: right;
 	background-color: white;
-	opacity: 0.8;
+	opacity: 0.9;
 
 }
 .tm-bg-white-transparent-center {
 	display: inline-block;
 	background-color: white;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 .tm-bg-white-transparent-right {
 	float: left;
 	background-color: white;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 .tm-img-container {
