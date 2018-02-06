@@ -89,6 +89,11 @@ def frequencies_run():
         return render_template("graph.html", script=script, div=div)
 
 
+@app.route('/users', methods=['GET', 'POST'])
+def users_run():
+    return render_template('users.html')
+
+
 @app.route('/rankings', methods=['GET', 'POST'])
 def rankings_run():
     return render_template('rankings.html')
