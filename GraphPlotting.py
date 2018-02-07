@@ -260,8 +260,9 @@ def build_correlations(graphable_dataframes, keywords):
         final_html += '<p>{}</p>'.format(c)
         final_html += v.to_html() + '<br>'
 
-    with open('templates/correlations.html', 'w') as FILE:
-        FILE.write(final_html)
+    # with open('templates/correlations.html', 'w') as FILE:
+    #     FILE.write(final_html)
+    return final_html
 
 
 if __name__ == "__main__":

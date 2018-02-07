@@ -15,6 +15,7 @@ import GraphPlotting
 
 app = Flask(__name__)
 
+table = ""
 
 @app.route('/')
 def to_main_page():
@@ -81,7 +82,7 @@ def frequencies_run():
                                                              **plot_options
                                                               )
 
-        GraphPlotting.build_correlations(plot_these, words2plot)
+        table = GraphPlotting.build_correlations(plot_these, words2plot)
 
         script, div = GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
 
@@ -110,7 +111,7 @@ def normalized_counts_run():
 
 @app.route('/correlations', methods=['GET', 'POST'])
 def correlations_run():
-    return render_template('correlations.html')
+    return render_template('correlations.html', table=table)
 
 
 # Functions used above.
