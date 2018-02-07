@@ -193,7 +193,7 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, keywords=def
     corrs = {}
 
     for i, df in enumerate(graphable_dataframes):
-        corrs[keywords[i+1]] = df.corr()
+        corrs[keywords[i]] = df.corr()
 
     return graphable_dataframes, corrs
 
@@ -275,8 +275,8 @@ if __name__ == "__main__":
     difference = False
 
     plot_these, corrs = make_dataframes_graphable(combined_df, subreddits, keywords,
-                                                   datetimestart=None,  #datetime(2016, 10, 1),
-                                                   datetimeend=None,  #datetime(2017, 5, 30),
+                                                   datetimestart=None,
+                                                   datetimeend=None,
                                                    normalize=False,
                                                    difference=difference,
                                                    cumsum=False,
