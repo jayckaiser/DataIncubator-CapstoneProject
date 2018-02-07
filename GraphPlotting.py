@@ -130,7 +130,9 @@ def smoothify(graphable_dataframes, smoothing_rate=10):
     return smoothed_dfs
 
 
-def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False, quantile=0.0, smooth=0.0, correlations=False):
+def make_dataframes_graphable(dataframe_list, subreddits=default_s, keywords=default_k,
+                              datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False,
+                              quantile=0.0, smooth=0.0, correlations=False):
     """
     Plot the frequency data into a graph, with many parameters for customization.
 
@@ -272,7 +274,7 @@ if __name__ == "__main__":
 
     difference = False
 
-    plot_these, corrs = make_dataframes_graphable(combined_df, subreddits,
+    plot_these, corrs = make_dataframes_graphable(combined_df, subreddits, keywords,
                                                    datetimestart=None,  #datetime(2016, 10, 1),
                                                    datetimeend=None,  #datetime(2017, 5, 30),
                                                    normalize=False,
