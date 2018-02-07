@@ -33,11 +33,6 @@ def index_run():
 
 @app.route('/frequencies', methods=['GET', 'POST'])
 def frequencies_run():
-    """
-    Runs the actual server as necessary.
-
-    :return:
-    """
     if request.method == 'GET':
         print('Getting the webpage!')
         return render_template('frequencies.html')
@@ -80,19 +75,23 @@ def frequencies_run():
         plot_options = {opt: True for opt in options2plot}
 
         difference = ('difference' in plot_options)
+        correlations = ('correlations' in plot_options)
 
         plot_these = GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
                                                              datetimestart=startdate, datetimeend=enddate,
                                                              **plot_options
                                                               )
         script, div = GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
+        
+        if correlations:
+            return render_template("graph.html", script=script, div=div), render_template("correlations.html")
+
         return render_template("graph.html", script=script, div=div)
 
 
 @app.route('/users', methods=['GET', 'POST'])
 def users_run():
     return render_template('users.html')
-
 
 @app.route('/rankings', methods=['GET', 'POST'])
 def rankings_run():

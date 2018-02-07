@@ -11,10 +11,20 @@
 <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.10.min.js"></script>
 
 </head>
-<body>
+
+<script type="text/javascript">
+   function load()
+   {
+   window.location.href = "correlations.html";
+
+   }
+   </script>
+
+<body onload="load()">
 
 {{ script|safe }}
 {{ div|safe }}
+
 
 </body>
 </html>

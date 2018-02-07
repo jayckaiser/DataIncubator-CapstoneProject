@@ -35,11 +35,8 @@ def create_teh_dataframe(data_directory, subreddits=default_s, keywords=default_
 
     for sub in subreddits:
         sub_df = pd.read_csv(os.path.join(data_directory, sub + '.csv'), index_col=False)
-
         sub_df = sub_df.reset_index(level=0, drop=True)
-
         sub_df['date'] = pd.to_datetime(sub_df['date'])
-
         sub_df.set_index('date', inplace=True)
 
         sub_keyword_dfs = []
@@ -53,7 +50,8 @@ def create_teh_dataframe(data_directory, subreddits=default_s, keywords=default_
 
     master_dfs = []
     for keyword_zip in keyword_zips:
-        master_dfs.append(pd.DataFrame(dict(zip(subreddits, keyword_zip))))
+        sub_df = pd.DataFrame(dict(zip(subreddits, keyword_zip)))
+        master_dfs.append(sub_df)
 
     return master_dfs
 
@@ -190,7 +188,12 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestar
     if smooth:
         graphable_dataframes = smoothify(graphable_dataframes)
 
-    return graphable_dataframes
+    corrs = {}
+
+    for i, df in enumerate(graphable_dataframes):
+        corrs[keywords[i+1]] = df.corr()
+
+    return graphable_dataframes, corrs
 
 
 def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference=False):
@@ -253,28 +256,41 @@ if __name__ == "__main__":
     data_directory = './data/by_subs_frequencies_100/'
 
     subreddits = [
+        'politics',
         'the_donald',
         'hillaryclinton',
                   ]
     keywords = [
         'trump',
-        'clinton',
+        'gay',
+        'racist',
                 ]
 
     combined_df = create_teh_dataframe(data_directory, subreddits=subreddits, keywords=keywords)
 
     print(len(combined_df))
-    #print(combined_df[1].info)
+
     difference = False
 
-    plot_these = make_dataframes_graphable(combined_df, subreddits,
-                                           datetimestart=None,  #datetime(2016, 10, 1),
-                                           datetimeend=None,  #datetime(2017, 5, 30),
-                                           normalize=True,
-                                           difference=difference,
-                                           cumsum=False,
-                                           quantile=0.99,
-                                           smooth=10
-                                           )
-    #plot_teh_graphs_matplotlib(plot_these, subreddits, keywords, difference=difference)
+    plot_these, corrs = make_dataframes_graphable(combined_df, subreddits,
+                                                   datetimestart=None,  #datetime(2016, 10, 1),
+                                                   datetimeend=None,  #datetime(2017, 5, 30),
+                                                   normalize=False,
+                                                   difference=difference,
+                                                   cumsum=False,
+                                                   quantile=0.99,
+                                                   smooth=10
+                                                   )
+
     plot_teh_graphs_bokeh(plot_these, subreddits, keywords, difference=difference)
+
+    final_html = ""
+
+    for c, v in corrs.items():
+
+        final_html += '<p>{}</p>'.format(c)
+        final_html += v.to_html() + '<br>'
+
+    with open('templates/correlations.html', 'w') as FILE:
+        FILE.write(final_html)
+
