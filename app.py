@@ -86,7 +86,8 @@ def frequencies_run():
         # if correlations:
         #     GraphPlotting.build_correlations(corrs)
         #
-        #     return render_template("graph.html", script=script, div=div), render_template("correlations.html")
+        #     return render_template("graph.html", script=script, div=div),
+        #            render_template("correlations")
 
         return render_template("graph.html", script=script, div=div)
 
@@ -110,6 +111,10 @@ def counts_run():
 @app.route('/normalizedcounts', methods=['GET', 'POST'])
 def normalized_counts_run():
     return render_template('normalizedcounts.html')
+
+@app.route('/correlations', methods=['GET', 'POST'])
+def correlations_run():
+    return render_template('correlations.html')
 
 
 # Functions used above.
