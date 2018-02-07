@@ -83,10 +83,10 @@ def frequencies_run():
                                                               )
         script, div = GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
         
-        if correlations:
-            GraphPlotting.build_correlations(corrs)
-
-            return render_template("graph.html", script=script, div=div), render_template("correlations.html")
+        # if correlations:
+        #     GraphPlotting.build_correlations(corrs)
+        #
+        #     return render_template("graph.html", script=script, div=div), render_template("correlations.html")
 
         return render_template("graph.html", script=script, div=div)
 
