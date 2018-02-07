@@ -254,6 +254,17 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     return script, div
 
 
+def build_correlations(corrs):
+    final_html = ""
+
+    for c, v in corrs.items():
+        final_html += '<p>{}</p>'.format(c)
+        final_html += v.to_html() + '<br>'
+
+    with open('templates/correlations.html', 'w') as FILE:
+        FILE.write(final_html)
+
+
 if __name__ == "__main__":
     data_directory = './data/by_subs_frequencies_100/'
 
@@ -285,14 +296,6 @@ if __name__ == "__main__":
                                                    )
 
     plot_teh_graphs_bokeh(plot_these, subreddits, keywords, difference=difference)
+    build_correlations(corrs)
 
-    final_html = ""
-
-    for c, v in corrs.items():
-
-        final_html += '<p>{}</p>'.format(c)
-        final_html += v.to_html() + '<br>'
-
-    with open('templates/correlations.html', 'w') as FILE:
-        FILE.write(final_html)
 
