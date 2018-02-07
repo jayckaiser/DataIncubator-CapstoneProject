@@ -75,7 +75,6 @@ def frequencies_run():
         plot_options = {opt: True for opt in options2plot}
 
         difference = ('difference' in plot_options)
-        correlations = ('correlations' in plot_options)
 
         plot_these, corrs = GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
                                                              datetimestart=startdate, datetimeend=enddate,
