@@ -130,7 +130,7 @@ def smoothify(graphable_dataframes, smoothing_rate=10):
     return smoothed_dfs
 
 
-def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False, quantile=0.0, smooth=0.0):
+def make_dataframes_graphable(dataframe_list, subreddits=default_s, datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False, quantile=0.0, smooth=0.0, correlations=False):
     """
     Plot the frequency data into a graph, with many parameters for customization.
 
