@@ -43,6 +43,40 @@ http://www.tooplate.com/view/2096-individual
               <article class="col-md-6 tm-article tm-bg-white-transparent">
                 <header><h1>Measuring Interconnectedness of Subreddits Over Time</h1></header>
                 <p>
+                  The following graphs show the change in numbers of shared users between r/politics and other subreddits over time, normalized by different factors and frequencies. From these, we can visualize the importance of each subreddit and how its users change in political taste over time.
+                </p>
+              </article>
+
+              <div style="text-align: center;">
+                <form id='entryinfo' method='get' action='counts'>
+                  <input class="btn btn-danger" type='submit' value="Raw Poster Count"/>
+                </form>
+                </div>
+                <div style="text-align: center;">
+                <form id='entryinfo' method='get' action='normalizedcounts'>
+                  <input class="btn btn-danger" type='submit' value="Raw Poster Count w/ Ranking Normalization"/>
+                </form>
+                </div>
+
+
+                <div style="text-align: center;">
+                  <form id='entryinfo' method='get' action='rankings'>
+                  <input class="btn btn-danger" type='submit' value="Poster Frequencies"/>
+                </form>
+                </div>
+                <div style="text-align: center;">
+                <form id='entryinfo' method='get' action='normalizedrankings'>
+                  <input class="btn btn-danger" type='submit' value="Poster Frequencies w/ Ranking Normalization"/>
+                </form>
+                </div>
+
+          </section>
+        </div>
+
+        <div id="tm-section-2" class="parallax-window" data-parallax="scroll" data-image-src="../static/bg-img-06.jpg">
+          <section class="container tm-page-1-content">
+              <div class="col-md-6 tm-article tm-bg-white-transparent">
+                <p>
                   I've made several assumptions in the creation of this project.
                 </p>
                 <p>
@@ -54,38 +88,8 @@ http://www.tooplate.com/view/2096-individual
                 <p>
                 Finally, for this project I have assumed that if two subreddits share a large number of posters, those communities can be said to be frequented by people of similar ideologies. For example, pretend that I myself frequently post in the subreddit dedicated to handbells (r/handbells). Additionally, I, like all handbell players, am very politically inclined, and I post in r/politics as well. If enough of us daring handbell players post in r/politics, we can be said to be an influential subreddit, or a subreddit that has a high count of shared users with r/politics.
                 </p>
-              </article>
-
-          </section>
-        </div>
-
-        <div id="tm-section-2" class="parallax-window" data-parallax="scroll" data-image-src="../static/bg-img-06.jpg">
-          <section class="container tm-page-1-content">
-              <div class="col-md-6 tm-article tm-bg-white-transparent">
-
-                <p>
-                  The following graphs show the change in numbers of shared users between r/politics and other subreddits over time, normalized by different factors and frequencies. From these, we can visualize the importance of each subreddit and how its users change in political taste over time.
-                </p>
 
               </div>
-
-              <p>
-                <form id='entryinfo' method='get' action='counts'>
-                  <input class="btn btn-danger tm-btn-left" type='submit' value="Raw Poster Count"/>
-                </form>
-                <form id='entryinfo' method='get' action='normalizedcounts'>
-                  <input class="btn btn-danger tm-btn-right" type='submit' value="Raw Poster Count w/ Ranking Normalization"/>
-                </form>
-                </p>
-
-                <p>
-                  <form id='entryinfo' method='get' action='rankings'>
-                  <input class="btn btn-danger tm-btn-left" type='submit' value="Poster Frequencies"/>
-                </form>
-                <form id='entryinfo' method='get' action='normalizedrankings'>
-                  <input class="btn btn-danger tm-btn-right" type='submit' value="Poster Frequencies w/ Ranking Normalization"/>
-                </form>
-                </p>
 
           </section>
         </div>
