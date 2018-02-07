@@ -63,7 +63,7 @@ def rank_df(df):
     return df.T.rank(ascending=False).T
 
 
-def plot_teh_graphs_bokeh(df, per_row=40, rankings=False):
+def plot_teh_graphs_bokeh(df, per_row=40, normalize=False, rankings=False):
 
     colors = iter(it.cycle(palette))
 
@@ -140,6 +140,6 @@ if __name__ == "__main__":
     df = create_dataframe(main_directory, normalize=normalize, relative=rankings)
     #print(df)
 
-    plot_teh_graphs_bokeh(df, rankings=rankings)
+    plot_teh_graphs_bokeh(df, normalize=normalize, rankings=rankings)
 
     #print(refined_df.info)

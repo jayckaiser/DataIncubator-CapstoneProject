@@ -245,17 +245,18 @@ if __name__ == "__main__":
     keywords = [
         'trump',
         'clinton',
-        #'sanders'
                 ]
 
     combined_df = create_teh_dataframe(data_directory, subreddits=subreddits, keywords=keywords)
 
+    print(len(combined_df))
+    #print(combined_df[1].info)
     difference = False
 
     plot_these = make_dataframes_graphable(combined_df, subreddits,
                                            datetimestart=None,  #datetime(2016, 10, 1),
                                            datetimeend=None,  #datetime(2017, 5, 30),
-                                           normalize=False,
+                                           normalize=True,
                                            difference=difference,
                                            cumsum=False,
                                            quantile=0.99,
