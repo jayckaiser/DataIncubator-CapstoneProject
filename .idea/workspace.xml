@@ -2,286 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9c115d-0a2a-45af-a956-b14d731b595d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/GraphPlotting.html" afterPath="$PROJECT_DIR$/GraphPlotting.html" />
       <change beforePath="$PROJECT_DIR$/GraphPlotting.py" afterPath="$PROJECT_DIR$/GraphPlotting.py" />
-      <change beforePath="$PROJECT_DIR$/UsersPlotting.py" afterPath="$PROJECT_DIR$/UsersPlotting.py" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/2012elections.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/2012elections.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/2016_elections.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/2016_elections.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/acta.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/acta.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/agorism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/agorism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/alloccupy.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/alloccupy.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/alltheleft.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/alltheleft.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/americangovernment.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/americangovernment.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/americanpolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/americanpolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/americanselect.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/americanselect.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchistnews.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchistnews.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarcho_capitalism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarcho_capitalism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchobjectivism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchobjectivism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchy101.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/anarchy101.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anonops.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/anonops.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anonymous.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/anonymous.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/antiwar.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/antiwar.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/anythinggoesnews.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/anythinggoesnews.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/ask_political_science.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/ask_political_science.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/ask_politics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/ask_politics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/asktrumpsupporters.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/asktrumpsupporters.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/auinternetaccess.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/auinternetaccess.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/austrian_economics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/austrian_economics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/authoritarian.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/authoritarian.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/bad_cop_no_donut.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/bad_cop_no_donut.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/badgovnofreedom.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/badgovnofreedom.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/basicincome.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/basicincome.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/bencarson.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/bencarson.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/boycotthollywood.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/boycotthollywood.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/bullmooseparty.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/bullmooseparty.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/business.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/business.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/campaigns.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/campaigns.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/carly_fiorina.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/carly_fiorina.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/cascadia.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/cascadia.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/censorship.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/censorship.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/centrist.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/centrist.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/chrischristie.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/chrischristie.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/christian_ancaps.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/christian_ancaps.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/cispa.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/cispa.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/classical_liberals.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/classical_liberals.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/communism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/communism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/comparative.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/comparative.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/conservative.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/conservative.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/conservatives.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/conservatives.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/conspiracy.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/conspiracy.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/conspiratard.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/conspiratard.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/cornbreadliberals.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/cornbreadliberals.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/crimethinccollective.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/crimethinccollective.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/darknetplan.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/darknetplan.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/debateacommunist.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/debateacommunist.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/debatecommunism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/debatecommunism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/debatefascism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/debatefascism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/democracy.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/democracy.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/democrats.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/democrats.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/demsocialist.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/demsocialist.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/descentintotyranny.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/descentintotyranny.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/doctorswithoutborders.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/doctorswithoutborders.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/economics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/economics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/electionpolls.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/electionpolls.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/electionreform.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/electionreform.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/elections.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/elections.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/endlesswar.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/endlesswar.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/enoughobamaspam.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/enoughobamaspam.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/enoughpaulspam.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/enoughpaulspam.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/environment.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/environment.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/evolutionreddit.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/evolutionreddit.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/fairtax.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/fairtax.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/fia.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/fia.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/firstamendment.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/firstamendment.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/flgovernment.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/flgovernment.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/flushthetpp.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/flushthetpp.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/forecast2016.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/forecast2016.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/futuristparty.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/futuristparty.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/garyjohnson.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/garyjohnson.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/good_cop_free_donut.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/good_cop_free_donut.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/government.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/government.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/greed.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/greed.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/green.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/green.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/green_anarchism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/green_anarchism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/greenparty.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/greenparty.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/gunpolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/gunpolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/gunsarecool.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/gunsarecool.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/hackbloc.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/hackbloc.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/hillaryclinton.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/hillaryclinton.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/hillaryforamerica.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/hillaryforamerica.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/history.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/history.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/humanrights.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/humanrights.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/illinoispolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/illinoispolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/internationalbusiness.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/internationalbusiness.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/internetdeclaration.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/internetdeclaration.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/internetdefense.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/internetdefense.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/israelexposed.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/israelexposed.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/iwantout.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/iwantout.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/iww.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/iww.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/jillstein.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/jillstein.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/jindal.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/jindal.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/justice.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/justice.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/kasichforpresident.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/kasichforpresident.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/killhollywood.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/killhollywood.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/labor.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/labor.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/leftcommunism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/leftcommunism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/leninism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/leninism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/liberal.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/liberal.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarian.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarian.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertariandebates.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertariandebates.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarianleft.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarianleft.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarianmeme.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarianmeme.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertariansocialism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertariansocialism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarianwomen.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/libertarianwomen.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/liberty.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/liberty.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/marco_rubio.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/marco_rubio.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/martinomalley.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/martinomalley.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/masspolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/masspolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/mcmullin.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/mcmullin.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/mensrights.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/mensrights.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/meshnet.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/meshnet.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/missouripolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/missouripolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/moderatepolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/moderatepolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/monarchism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/monarchism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/neoprogs.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/neoprogs.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/neutralpolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/neutralpolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/new_right.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/new_right.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/news.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/news.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/nsa.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/nsa.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/nsaleaks.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/nsaleaks.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/obama.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/obama.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/objectivism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/objectivism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/occupy.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/occupy.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/occupywallstreet.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/occupywallstreet.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/opelectronicleviathan.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/opelectronicleviathan.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/operationgrabass.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/operationgrabass.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/operationpullryan.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/operationpullryan.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/paleoconservative.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/paleoconservative.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/paul.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/paul.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/peoplesparty.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/peoplesparty.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/petition.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/petition.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/pirateparty.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/pirateparty.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politic.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politic.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalactivism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalactivism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicaldiscussion.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicaldiscussion.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalfactchecking.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalfactchecking.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalhumor.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalhumor.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalmoderation.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalmoderation.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalphilosophy.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalphilosophy.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalpics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalpics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalpredictions.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalpredictions.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalscience.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicalscience.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicaltweets.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicaltweets.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politics.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicsdebate.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicsdebate.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicsinamerica.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/politicsinamerica.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/pragmatism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/pragmatism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/privacy.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/privacy.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/prochoice.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/prochoice.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/progressive.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/progressive.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/progun.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/progun.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/projectfactcheck.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/projectfactcheck.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/projectoverhaul.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/projectoverhaul.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/randpaul.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/randpaul.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/redditactivism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/redditactivism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/republican.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/republican.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/republicans.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/republicans.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/republicofpolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/republicofpolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/restorethefourth.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/restorethefourth.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/ricksantorum.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/ricksantorum.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/romney.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/romney.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/ronpaul.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/ronpaul.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/rootstrikers.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/rootstrikers.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/rpac.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/rpac.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/runforit.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/runforit.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/rvbdebates.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/rvbdebates.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/rwb.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/rwb.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/sandersforpresident.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/sandersforpresident.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/savetheconstitution.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/savetheconstitution.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/smallrevolutions.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/smallrevolutions.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/socialdemocracy.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/socialdemocracy.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/socialism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/socialism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/sopa.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/sopa.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/stateoftheunion.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/stateoftheunion.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/supportthetpp.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/supportthetpp.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/techpolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/techpolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/tedcruz.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/tedcruz.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/testpac.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/testpac.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/the_donald.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/the_donald.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/thewarondrugs.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/thewarondrugs.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/thirdpartyroundtable.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/thirdpartyroundtable.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/timetolegalize.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/timetolegalize.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/troubledteens.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/troubledteens.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/truelibertarian.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/truelibertarian.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/trueobjectivism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/trueobjectivism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/truepolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/truepolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/union.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/union.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/usanews.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/usanews.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/uspolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/uspolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/utahpolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/utahpolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/virginiapolitics.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/virginiapolitics.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/voluntarism.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/voluntarism.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/voting.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/voting.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/watchingcongress.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/watchingcongress.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/wealth.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/wealth.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/wikileaks.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/wikileaks.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/worldunity.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/worldunity.csv" />
-      <change beforePath="$PROJECT_DIR$/data/by_subs_frequencies_100/yro.csv" afterPath="$PROJECT_DIR$/data/by_subs_frequencies_100/yro.csv" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2011-11.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2011-12.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-01.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-02.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-03.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-04.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-05.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-06.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-07.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-08.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-09.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-10.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-11.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2012-12.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-01.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-02.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-03.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-04.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-05.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-06.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-07.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-08.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-09.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-10.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-11.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2013-12.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-01.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-02.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-03.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-04.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-05.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-06.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-07.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-08.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-09.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-10.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-11.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2014-12.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-01.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-02.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-03.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-04.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-05.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-06.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-07.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-08.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-09.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-10.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-11.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2015-12.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-01.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-02.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-03.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-04.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-05.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-06.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-07.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-08.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-09.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-10.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-11.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2016-12.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-01.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-02.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-03.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-04.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-05.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-06.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-07.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-08.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-09.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-10.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/subreddit_counts/RC_2017-11.pkl" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -295,7 +17,7 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="774">
               <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
                 <element signature="e#50#59#0" expanded="true" />
@@ -313,9 +35,18 @@
       <file leaf-file-name="GraphPlotting.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="258" column="57" lean-forward="false" selection-start-line="258" selection-start-column="57" selection-end-line="258" selection-end-column="57" />
-              <folding />
+            <state relative-caret-position="410">
+              <caret line="243" column="31" lean-forward="true" selection-start-line="243" selection-start-column="31" selection-end-line="243" selection-end-column="31" />
+              <folding>
+                <element signature="e#209#228#0" expanded="true" />
+                <element signature="e#758#1547#0" expanded="false" />
+                <element signature="e#1862#1969#0" expanded="false" />
+                <element signature="e#2031#2324#0" expanded="false" />
+                <element signature="e#2381#2727#0" expanded="false" />
+                <element signature="e#2798#3200#0" expanded="false" />
+                <element signature="e#3263#3494#0" expanded="false" />
+                <element signature="e#3683#6019#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -343,16 +74,16 @@
       <list>
         <option value="$PROJECT_DIR$/NetworkPlotting.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/GraphPlotting.py" />
         <option value="$PROJECT_DIR$/UsersPlotting.py" />
+        <option value="$PROJECT_DIR$/GraphPlotting.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="992" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="928" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -369,7 +100,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -382,6 +112,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -485,15 +216,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="992" y="-4" width="1857" height="1092" extended-state="6" />
+    <frame x="992" y="24" width="928" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.055676855" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32946378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -521,6 +252,39 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#59#0" expanded="true" />
+            <element signature="e#332#439#0" expanded="false" />
+            <element signature="e#521#2563#0" expanded="false" />
+            <element signature="e#3232#3271#0" expanded="false" />
+            <element signature="e#3305#3348#0" expanded="false" />
+            <element signature="e#3380#3427#0" expanded="false" />
+            <element signature="e#3461#3501#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4482">
+          <caret line="258" column="57" lean-forward="false" selection-start-line="258" selection-start-column="57" selection-end-line="258" selection-end-column="57" />
+          <folding>
+            <element signature="e#209#228#0" expanded="true" />
+            <element signature="e#758#1547#0" expanded="false" />
+            <element signature="e#1862#1969#0" expanded="false" />
+            <element signature="e#2031#2324#0" expanded="false" />
+            <element signature="e#2381#2727#0" expanded="false" />
+            <element signature="e#2798#3200#0" expanded="false" />
+            <element signature="e#3263#3494#0" expanded="false" />
+            <element signature="e#3683#6019#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1854">
           <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
@@ -539,7 +303,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4140">
           <caret line="239" column="18" lean-forward="true" selection-start-line="239" selection-start-column="18" selection-end-line="239" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="e#209#228#0" expanded="true" />
+            <element signature="e#758#1547#0" expanded="false" />
+            <element signature="e#1862#1969#0" expanded="false" />
+            <element signature="e#2031#2324#0" expanded="false" />
+            <element signature="e#2381#2727#0" expanded="false" />
+            <element signature="e#2798#3200#0" expanded="false" />
+            <element signature="e#3263#3494#0" expanded="false" />
+            <element signature="e#3683#6019#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -798,7 +571,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="774">
           <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
             <element signature="e#50#59#0" expanded="true" />
@@ -823,15 +596,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="103" column="84" lean-forward="true" selection-start-line="103" selection-start-column="84" selection-end-line="103" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphPlotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="258" column="57" lean-forward="false" selection-start-line="258" selection-start-column="57" selection-end-line="258" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="410">
+          <caret line="243" column="31" lean-forward="true" selection-start-line="243" selection-start-column="31" selection-end-line="243" selection-end-column="31" />
+          <folding>
+            <element signature="e#209#228#0" expanded="true" />
+            <element signature="e#758#1547#0" expanded="false" />
+            <element signature="e#1862#1969#0" expanded="false" />
+            <element signature="e#2031#2324#0" expanded="false" />
+            <element signature="e#2381#2727#0" expanded="false" />
+            <element signature="e#2798#3200#0" expanded="false" />
+            <element signature="e#3263#3494#0" expanded="false" />
+            <element signature="e#3683#6019#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

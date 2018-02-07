@@ -14,7 +14,7 @@ Updated Jan 25, 2018
 import pandas as pd
 import os
 from datetime import datetime
-from bokeh.plotting import figure, save, output_file, show
+from bokeh.plotting import figure, save, show
 from bokeh.palettes import Dark2_5 as palette
 from bokeh.models.formatters import DatetimeTickFormatter
 from bokeh.models.tools import HoverTool
@@ -197,25 +197,32 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     colors = it.cycle(palette)
 
     p = figure(plot_width=1700, plot_height=900, x_axis_type='datetime',
-               tools="pan,wheel_zoom,box_zoom,reset,hover")
+               tools="pan,wheel_zoom,box_zoom,reset,hover,tap")
+
+    plots = {}
 
     for i, df in enumerate(graphable_dataframes):
 
         df['viewable_dates'] = [x.strftime("%Y-%m-%d") for x in df.index]
+        df['months_value'] = [x.strftime("%m") for x in df.index]
+        df['days_value'] = [x.strftime("%d") for x in df.index]
+        df['years_value'] = [x.strftime("%Y") for x in df.index]
+        df['keyword'] = keywords[1:][i]
 
         df = df.reset_index()
 
         if difference:
 
             name = 'r/{} - r/{}: "{}"'.format(subreddits[0], subreddits[1], keywords[i + 1])
-            p.line(x='date', y=subreddits[0], source=ColumnDataSource(df),
-                   legend=name, color=next(colors), line_width=5)
+            plots[name] = p.line(x='date', y=subreddits[0], source=ColumnDataSource(df),
+                                legend=name, color=next(colors), line_width=5)
 
         else:
             for j, sub in enumerate(subreddits):
                 name = 'r/{}: "{}"'.format(subreddits[j], keywords[i + 1])
-                p.line(x='date', y=sub, source=ColumnDataSource(df),
-                       legend=name, color=next(colors), line_width=5)
+
+                plots[name] = p.line(x='date', y=sub, source=ColumnDataSource(df),
+                                legend=name, color=next(colors), line_width=5)
 
     p.legend.location = "top_left"
     p.legend.click_policy = 'hide'
@@ -227,7 +234,14 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     hover.tooltips = tips
     hover.mode = 'mouse'
 
+    url = "https://www.google.com/search?q={query}&source=lnt&tbs=cdr%3A1%2Ccd_min%3A{month}%2F{day}%2F{year}%2Ccd_max%3A{month}%2F{day}%2F{year}"
 
+    taptool = p.select(type=TapTool)
+    taptool.callback = OpenURL(url=url.format(query="@keyword",
+                                              month="@months_value",
+                                              day="@days_value",
+                                              year="@years_value")
+                              )
 
     show(p)
     script, div = components(p)
@@ -240,7 +254,6 @@ if __name__ == "__main__":
     subreddits = [
         'the_donald',
         'hillaryclinton',
-        #'politics'
                   ]
     keywords = [
         'trump',
