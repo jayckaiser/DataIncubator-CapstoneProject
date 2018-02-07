@@ -234,7 +234,8 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     hover.tooltips = tips
     hover.mode = 'mouse'
 
-    url = "https://www.google.com/search?q={query}+politics&source=lnt&tbs=cdr%3A1%2Ccd_min%3A{month}%2F{day}%2F{year}%2Ccd_max%3A{month}%2F{day}%2F{year}"
+    #url = "https://www.google.com/search?q={query}+politics&source=lnt&tbs=cdr%3A1%2Ccd_min%3A{month}%2F{day}%2F{year}%2Ccd_max%3A{month}%2F{day}%2F{year}"
+    url = "https://www.google.com/search?q={query}+politics&tbs=cdr:1,cd_min:{month}/{day}/{year},cd_max:{month}/{day}/{year}&source=lnms&tbm=nws&"
 
     taptool = p.select(type=TapTool)
     taptool.callback = OpenURL(url=url.format(query="@keyword",
