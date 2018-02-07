@@ -132,7 +132,7 @@ def smoothify(graphable_dataframes, smoothing_rate=10):
 
 def make_dataframes_graphable(dataframe_list, subreddits=default_s, keywords=default_k,
                               datetimestart=None, datetimeend=None, normalize=False, difference=False, cumsum=False,
-                              quantile=0.0, smooth=0.0, correlations=False):
+                              quantile=0.0, smooth=0.0):
     """
     Plot the frequency data into a graph, with many parameters for customization.
 
@@ -190,12 +190,7 @@ def make_dataframes_graphable(dataframe_list, subreddits=default_s, keywords=def
     if smooth:
         graphable_dataframes = smoothify(graphable_dataframes)
 
-    corrs = {}
-
-    for i, df in enumerate(graphable_dataframes):
-        corrs[keywords[i]] = df.corr()
-
-    return graphable_dataframes, corrs
+    return graphable_dataframes
 
 
 def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference=False):
@@ -254,7 +249,11 @@ def plot_teh_graphs_bokeh(graphable_dataframes, subreddits, keywords, difference
     return script, div
 
 
-def build_correlations(corrs):
+def build_correlations(graphable_dataframes, keywords):
+    corrs = {}
+    for i, df in enumerate(graphable_dataframes):
+        corrs[keywords[i]] = df.corr()
+
     final_html = ""
 
     for c, v in corrs.items():
@@ -285,7 +284,7 @@ if __name__ == "__main__":
 
     difference = False
 
-    plot_these, corrs = make_dataframes_graphable(combined_df, subreddits, keywords,
+    plot_these = make_dataframes_graphable(combined_df, subreddits, keywords,
                                                    datetimestart=None,
                                                    datetimeend=None,
                                                    normalize=False,
@@ -295,7 +294,8 @@ if __name__ == "__main__":
                                                    smooth=10
                                                    )
 
+    build_correlations(plot_these, keywords)
     plot_teh_graphs_bokeh(plot_these, subreddits, keywords, difference=difference)
-    build_correlations(corrs)
+
 
 

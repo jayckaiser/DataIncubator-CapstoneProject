@@ -76,13 +76,14 @@ def frequencies_run():
 
         difference = ('difference' in plot_options)
 
-        plot_these, corrs = GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
+        plot_these = GraphPlotting.make_dataframes_graphable(combined_df, subs2plot,
                                                              datetimestart=startdate, datetimeend=enddate,
                                                              **plot_options
                                                               )
-        script, div = GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
 
-        GraphPlotting.build_correlations(corrs)
+        GraphPlotting.build_correlations(plot_these, words2plot)
+
+        script, div = GraphPlotting.plot_teh_graphs_bokeh(plot_these, subs2plot, words2plot, difference=difference)
 
         return render_template("graph.html", script=script, div=div)
 
